@@ -4,8 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS TTA</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>CSS TTA</h1>
+        <!-- logo -->
+        <img src="" alt="">
+        <nav>
+            <ul>
+                <li><a href="#transitions">Transitions</a></li>
+                <li><a href="#transform">Transform</a></li>
+                <li><a href="#animations">Animations</a></li>
+                <li><a href="#keyframes">Keyframes</a></li>
+                <li><a href="#about#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <!-- Image goes here using responsive srcset -->
+            <h1>CSS</h1>
+            <h2>Transitions</h2>
+            <h2>Transforms</h2>
+            <h2>Animaations</h2>
+        </section>
+        
+        <section class="keyframes" id="keyframes">
+            <article>
+                <h2>Keyframe Intro</h2>
+                <p>Keyframes are most important part of creating animations in css. Their job is define the steps in an animation sequence. This allows us to control how a set element changes its style over a set duration. The keyframes specify the behaviour of one cycle of the animation; the animation may iterate zero or more times.The way that key frames are defined are by using: `@keyframes` rule. Then the name we set set for the animation sequence.
+                </p>
+                <img src="" alt="">
+                
+            </article>
+            
+            <article>
+                <h2>Keyframe Example</h2>
+                <p>In the example we see here that <keyframes-name> `box`is the name of the animation sequence.</p>
+                    <ol>
+                        <li><p>The percentages <keyframe-selector>
+                            0%, 50%, 100% represent “points in time” during the animation. 
+                           We can also use “from” and “to” instead of 0% and 100 %
+                           </p></li>
+                        <li><p>In these points in time we can style the element. In this example we choose to 0, 0.5 and 1 opacity during those 3 stages that we set.</p></li>
+                        <li><p>All these nested in a <keyframe-block></p></li>
+                    </ol>
+                <img src="" alt="">
+            </article>
+
+            
+            <article>
+                <h2>Keyframe Name</h2>
+                <p>
+                    the names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
+
+                <p>
+                    For example, the following two @keyframes rules have the same name, so the first will be ignored:
+                    @keyframes foo { /* ... */ }
+                    @keyframes "foo" { /* ... */ }
+                    On the other hand, the following @keyframes rule’s name is different from the previous two rules:
+                    @keyframes FOO { /* ... */ }
+                    The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
+                    @keyframes initial { /* ... */ }
+                    @keyframes None { /* ... */ }
+                    However, those names can be specified with a <string>, so the following are both valid:
+                    @keyframes "initial" { /* ... */ }
+                    @keyframes "None" { /* ... */ }
+                    </p>
+                <img src="" alt="">
+            </article>
+
+            <article>
+                <h2>Keyframe Selector</h2>
+                <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
+
+                    The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
+                <img src="" alt="">
+            </article>
+
+            <article>
+                <h2>Keyframe Block</h2>
+                <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
+                The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
+                        
+                </p>
+                 <img src="" alt="">
+            </article>            
+        </section>
+        
+        <section class="transitions" id="transitions">
+            <article>
+                <h2 class="transitions-h2">Transitions</h2>
+                <h3>Why Use CSS Transitions?</h3>
+                <p>
+                    CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code></code>&lt;a&gt;</code>p>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
+                </p>
+                
+                <h3>Transitions Sub-Properties</h3>
+                <p>The transition property is broken down into:</p>
+                <ul>
+                    <li><a href="#transition-property">transition-property</a></li>
+                    <li><a href="#transition-duration">transition-duration</a></li>
+                    <li><a href="#transition-timing">transition-timing-function</a></li>
+                    <li><a href="#transition-delay">transition-delay</a></li>
+                    <li><a href="#transition-behavior">transition-behavior</a></li>transition-behavior</li>
+                </ul>
+
+                <h3>Syntax</h3>
+                <p>
+                    The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-out</codecode></code>code></code>
+                </p>
+
+                <h3></h3>h3></h3>p></p>
+h3></h3>
+            </article>
+        </section>
+        
+        <section class="transforms" id="transform">
+            <article>
+                <h2 class = "transform-h2"> Transforms</h2>
+                <h3>What is the Transform in CSS?</h3>
+                <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate,scale,translate(move), skew, elements.
+                </p>
+                <img src="" alt="">
+
+                <h3>Properties</h3>
+                <p>Two major properties are used to define CSS transforms: transform and transform-origin.</p>
+            </article>
+        </section>
+
+        <section class="animations" id="animations">
+            <article>
+                <h2 class="animate-h2">Animations</h2>
+                <h3>Why use animations instead of JavaScript?</h3>
+                <p>There are three advantages to using CSS animations over JavaScript.</p>
+                <ol>
+                    <li>Easy to use</li>
+                    <li>Smooth performance using frame-skipping.</li>
+                    <li>Lets the browser control the animation, which optimizes performance.</li>
+                </ol>
+                <p>This runs well under a moderate system load because it reduces the update frequency of animations running in non-visible tabs.</p>
+            
+                <h3>How to begin</h3>
+                <p>To create an animation sequence, first you can style the specific element with the animation property. Second, in most cases you'll have to add an @keyframe rule. To learn more about @keyframes, click <a href="#keyframes">here</a>.</p>
+                <table>
+                    <thead>Sub-Properties</thead>
+                    <tr>
+                        <td>animation-composition</td>
+                        <td>Tells the <a href="#composite">Composite Operation</a> to use when multiple animations affect the same property.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-delay</td>
+                        <td>The delay between the element loading, and the start of the animation sequence.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-direction</td>
+                        <td>Specifies if the first iteration should be forward or backwards. Tells the animation if it should repeat from start, or alternate for a continous motion.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-duration</td>
+                        <td>Length of time to complete one cycle.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-fill-mode</td>
+                        <td>How an animation applies styles to target before and after running.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-iteration-count</td>
+                        <td>Number of times an animation repeats.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-name</td>
+                        <td>Enables <a href="#keyframes">@keyframe</a> specificity by targeting a specific element animation.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-play-state</td>
+                        <td>Pause or play a sequence.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-timeline</td>
+                        <td>Timeline that is used to control the progress of a CSS animation.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-timing-funtion</td>
+                        <td>How an animation transitions through <a href="#keyframes">@keyframes</a> by establishing acceleration curves.</td>
+                    </tr>
+                </table>
+
+                <h3>Syntax</h3>
+                <p class="code-example-slidein-alternate">Code Example</p>
+                <p>Code that looks like this <br><code>p { 
+                                                    <br>animation-duration: 3s;
+                                                    <br>animation-name: slidein;
+                                                    <br>animation-iteration-count: infinite;
+                                                    <br>animation-direction: alternate; <br>}</code><br>can be shortened into <br><code>p { <br>animation: 3s infinite alternate slidein; <br>}</code></p>
+
+                <h3>Setting multiple animation property values</h3>
+            </article>
+        </section>
+        
+        <section class="about">
+            
+        </section>
+        
+        <aside class="sidebar">
+            
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy;CopyRight 2024</p>
+    </footer>
+<script src = "scripts/script.js"></script>
 </body>
 </html>
