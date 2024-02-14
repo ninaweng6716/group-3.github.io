@@ -16,7 +16,7 @@
                 <li><a href="#transform">Transform</a></li>
                 <li><a href="#animations">Animations</a></li>
                 <li><a href="#keyframes">Keyframes</a></li>
-                <li><a href="#about#about">About</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -55,38 +55,38 @@
 
             
             <article>
-                <h2>Keyframe Name</h2>
+                <h2 id="keyframe-name">Keyframe Name</h2>
                 <p>
-                    the names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
+                    The names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
 
                 <p>
-                    For example, the following two @keyframes rules have the same name, so the first will be ignored:
-                    @keyframes foo { /* ... */ }
-                    @keyframes "foo" { /* ... */ }
-                    On the other hand, the following @keyframes rule’s name is different from the previous two rules:
-                    @keyframes FOO { /* ... */ }
-                    The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
-                    @keyframes initial { /* ... */ }
-                    @keyframes None { /* ... */ }
-                    However, those names can be specified with a <string>, so the following are both valid:
-                    @keyframes "initial" { /* ... */ }
-                    @keyframes "None" { /* ... */ }
-                    </p>
+                    For example, the following two @keyframes rules have the same name, so the first will be ignored:
+                    <br>@keyframes foo { /* ... */ }
+                    <br>@keyframes "foo" { /* ... */ }
+                <p>On the other hand, the following @keyframes rule's name is different from the previous two rules:
+                    <br>@keyframes FOO { /* ... */ }</p>
+                <p>The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
+                    <br>@keyframes initial { /* ... */ }
+                    <br>@keyframes None { /* ... */ }</p>
+                <p>However, those names can be specified with a <string>, so the following are both valid:
+                    <br>@keyframes "initial" { /* ... */ }
+                    <br>@keyframes "None" { /* ... */ }
+                </p>
                 <img src="" alt="">
             </article>
 
             <article>
                 <h2>Keyframe Selector</h2>
-                <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
+                <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
 
-                    The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
+                    The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
                 <img src="" alt="">
             </article>
 
             <article>
                 <h2>Keyframe Block</h2>
-                <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
-                The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
+                <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
+                The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
                         
                 </p>
                  <img src="" alt="">
@@ -101,7 +101,7 @@
                     CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code></code>&lt;a&gt;</code>p>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
                 </p>
                 
-                <h3>Transitions Sub-Properties</h3>
+                <h3 id="transitions-sub-properties">Transitions Sub-Properties</h3>
                 <p>The transition property is broken down into:</p>
                 <ul>
                     <li><a href="#transition-property">transition-property</a></li>
@@ -111,13 +111,12 @@
                     <li><a href="#transition-behavior">transition-behavior</a></li>transition-behavior</li>
                 </ul>
 
-                <h3>Syntax</h3>
+                <h3 id="transitions-syntax">Syntax</h3>
                 <p>
                     The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-out</codecode></code>code></code>
                 </p>
 
-                <h3></h3>h3></h3>p></p>
-h3></h3>
+            
             </article>
         </section>
         
@@ -146,7 +145,7 @@ h3></h3>
                 </ol>
                 <p>This runs well under a moderate system load because it reduces the update frequency of animations running in non-visible tabs.</p>
             
-                <h3>How to begin</h3>
+                <h3 id="animation-begin">How to begin</h3>
                 <p>To create an animation sequence, first you can style the specific element with the animation property. Second, in most cases you'll have to add an @keyframe rule. To learn more about @keyframes, click <a href="#keyframes">here</a>.</p>
                 <table>
                     <thead>Sub-Properties</thead>
@@ -192,7 +191,17 @@ h3></h3>
                     </tr>
                 </table>
 
-                <h3>Syntax</h3>
+                <h3 id="composite">Composite Operation</h3>
+                <p>The value of a property in a CSS rule is the underlying value, and the value of that same property in a keyframe is its effect value. What Composite Operation does is combine an effect value with an underlying value.</p>
+                <p>There are three types of operations:
+                    <ol>
+                        <li>Replace, which replaces the underlying value.</li>
+                        <li>Add, which adds to the underlying value.</li>
+                        <li>Accumulate, which combines with the underlying value.</li>
+                    </ol>
+                </p>
+
+                <h3 id="animation-syntax">Syntax</h3>
                 <p class="code-example-slidein-alternate">Code Example</p>
                 <p>Code that looks like this <br><code>p { 
                                                     <br>animation-duration: 3s;
