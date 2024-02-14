@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS TTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>CSS TTA</h1>
         <!-- logo -->
         <img src="" alt="">
         <nav>
@@ -17,7 +21,7 @@
                 <li><a href="#transform">Transform</a></li>
                 <li><a href="#animations">Animations</a></li>
                 <li><a href="#keyframes">Keyframes</a></li>
-                <li><a href="#about#about">About</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -131,7 +135,12 @@ h3></h3>
                 <img src="" alt="">
 
                 <h3>Properties</h3>
-                <p>Two major properties are used to define CSS transforms: transform and transform-origin.</p>
+                <h4>Transform-origin</h4>
+                <p>
+                Specifies the position of the origin. By default, it is at the center of the element and can be moved. It is used by several transforms, like rotations, scaling or skewing, that need a specific point as a parameter.
+                </p>
+                <h4>Transform</h4>
+                <p>Specifies the transforms to apply to the element. It is a space-separated list of transforms, which are applied one after the other, as requested by the composition operation. Composite transforms are effectively applied in order from right to left.</p>
             </article>
         </section>
 
