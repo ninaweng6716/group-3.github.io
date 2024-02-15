@@ -94,29 +94,213 @@
         </section>
         
         <section class="transitions" id="transitions">
-            <article>
-                <h2 class="transitions-h2">Transitions</h2>
-                <h3>Why Use CSS Transitions?</h3>
-                <p>
-                    CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code></code>&lt;a&gt;</code>p>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
-                </p>
+            <h2 class="transitions-h2">Transitions</h2>
+            <article class="transitions-article">
+
+                <div class="transitions-intro">
+                    <h3 id="transitions-intro-h3">Why Use CSS Transitions?</h3>
+                    <p>
+                        CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code>&lt;a&gt;</code>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
+                    </p>
+                    <img src="" alt="">
+                </div>
                 
-                <h3 id="transitions-sub-properties">Transitions Sub-Properties</h3>
-                <p>The transition property is broken down into:</p>
-                <ul>
-                    <li><a href="#transition-property">transition-property</a></li>
-                    <li><a href="#transition-duration">transition-duration</a></li>
-                    <li><a href="#transition-timing">transition-timing-function</a></li>
-                    <li><a href="#transition-delay">transition-delay</a></li>
-                    <li><a href="#transition-behavior">transition-behavior</a></li>transition-behavior</li>
-                </ul>
+                <div class="transitions-sub-properties">
+                    <h3 id="transitions-sub-properties-h3">Transitions Sub-Properties</h3>
+                    <p>The transition property is broken down into:</p>
+                    <ul>
+                        <li><a href="#transition-property">transition-property</a></li>
+                        <li><a href="#transition-duration">transition-duration</a></li>
+                        <li><a href="#transition-timing">transition-timing-function</a></li>
+                        <li><a href="#transition-delay">transition-delay</a></li>
+                        <li><a href="#transition-behavior">transition-behavior</a></li>
+                    </ul>
+                </div>
 
-                <h3 id="transitions-syntax">Syntax</h3>
-                <p>
-                    The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-out</codecode></code>code></code>
-                </p>
+                <div class="transitions-syntax">
+                    <h3 id="transitions-syntax-h3">Syntax</h3>
+                    <p>
+                        The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-out</code>
+                    </p>
 
-            
+                    <div class="transitions-syntax-multiple">
+                        <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
+                        <p>
+                            The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed.
+                        </p>
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+
+                <div class="transitions-nav-items">
+                    <h3 id="transitions-nav-items-h3">Applying Transitions to Nav Items</h3>
+                    <p>
+                        If you want your <code>a</code> to transition to its hover state seamlessly, you can do so very easily using CSS Transitions. You simply need to follow these steps:
+                    </p>
+    
+                    <ol id="transitions-nav-items-ol">
+                        <li>Ensure that you have already set different properties on your <code>a:hover</code> in CSS. In this case, our hover state has a different background- and text-color.</li>
+                        <li>Style the transition on your <code>a</code>. Lets say we want all the properties that will change in the hover state to quickly transition at the start but slow down towards the end of the animation, we can use <code>transition: all ease-out</code>.</li>
+                        <li>If you want to add a duration to your transition so that it occurs over a specified period of time, you can add it in between the code you just wrote. The code is now <code>transition: all 0.5s ease-out</code>.</li>
+                    </ol>
+    
+                    <p>
+                        That is it! If you want to add a delay time value, you can stick it at the end of your transition code. 
+                    </p>
+                </div>
+
+                <div class="transitions-js">
+                    <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
+                    <h4>Makes JavaScript Functionality Smoother</h4>
+                    <p>
+                        You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
+                    </p>
+
+                    <h4>Transitions on Display and Content-Visibility</h4>
+                    <p>
+                        You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
+                    </p>
+                    <video src="">
+
+                    </video>
+                </div>
+
+                <div class="transitions-glossary">
+                    <h3 id="transitions-glossary-h3">Transitions Sub-Property Glossary</h3>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Sub-Property</th>
+                            <th>Definition</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><strong>transition-property:</strong></td>
+                            <td>Specifies which CSS properties the transition is applied to. Can be `all`, `padding`, `height`, `width`, etc. Default value is `all`.</td>
+                          </tr>
+                          <tr>
+                            <td><strong>transition-duration:</strong></td>
+                            <td>Duration over which the transition occurs. Can be one value or multiple for different properties. Identical values, as with `padding` and `margin`, will be parsed. Default value is 0s.</td>
+                          </tr>
+                          <tr>
+                            <td><strong>transition-timing-function:</strong></td>
+                            <td>Specifies how intermediate values for transition properties are computed. Can be `linear`, `ease-in`, `ease-out`, etc. Default value is `ease`.</td>
+                          </tr>
+                          <tr>
+                            <td><strong>transition-delay:</strong></td>
+                            <td>Delay time between a transition property change and when you see the change. For instance, a 2-second delay for a transition will play 2 seconds after the transition trigger event. Default value is 0s.</td>
+                          </tr>
+                          <tr>
+                            <td><strong>transition-behavior:</strong></td>
+                            <td>Not supported by all browsers. Relevant for discrete animation behaviors - or animations without in-between states. Comes into play if `transition-property` and `transition-duration` are declared. Accepts one of the these values: `allow-discrete` or `normal`. Default is `normal`.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="transitions-timing-glossary">
+                    <h3 id="transitions-timing-glossary-h3">Transition-Timing-Function Glossary</h3>
+
+                    <div class="transitions-key-values">
+                        <h4>Key Values</h4>
+                        <p>
+                            Start with ease, ease-in, ease-out, ease-in-out, and linear when you are just getting to know CSS Transitions! More details about step-start and step-end are provided <a href="#step-end-start">here</a>. Regarding cubic-bezier, click <a href="#transitions-cubic-bezier">here</a>.
+                        </p>
+                        <table class="timing-function-table">
+                            <thead>
+                              <tr>
+                                <th>Timing Function</th>
+                                <th>Definition</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>ease</strong></td>
+                                <td>Transition begins slowly, accelerates in the middle, and decelerates in the end.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>ease-in</strong></td>
+                                <td>Transition begins slowly and accelerates towards the end.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>ease-out</strong></td>
+                                <td>Transition begins quickly and decelerates towards the end.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>ease-in-out</strong></td>
+                                <td>Very similar to ease, with a gradual acceleration and deceleration.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>linear</strong></td>
+                                <td>Transition speed is constant throughout.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>step-start</strong></td>
+                                <td>Element jumps to its final step right away.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>step-end</strong></td>
+                                <td>The element stays in its initial step until it jumps to the final step rather abruptly.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>cubic-bezier</strong></td>
+                                <td>The transition behaves according to the cubic-bezier curve function, which you can use to specify four points of contact where the transition accelerates and decelerates.The points of contact are expressed as coordinates on a graph.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="transitions-step-values">
+                        <h4>Step Values and Jump Values</h4>
+                        <p>
+                            The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
+                        </p>
+                        <table class="step-values-table">
+                            <thead>
+                              <tr>
+                                <th>Jump Value</th>
+                                <th>Definition</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>Jump-start</strong></td>
+                                <td>The first "jump" happens when the animation begins. In other words, the progress bar fills from left to right ("abrupt" start).</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Jump-end</strong></td>
+                                <td>Default jump-value. The last jump happens when the animation ends. Progress bar analogy: transition ends suddenly on the right when the bar is filled.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Jump-none</strong></td>
+                                <td>No jump on either end.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Jump-both</strong></td>
+                                <td>It's like if the progress bar paused for a bit at the start and end.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="step-end-start" class="step-end-start">
+                        <h4>Step-End and Step-Start</h4>
+                        <p>
+                            These timing functions are most useful when working with more complex transition functions, such as if you are dealing with multiple transition properties. You can have a value of step-start or step-end in place of your other key transition-timing-functions.
+                        </p>
+                    </div>
+
+                    <div id="transitions-cubic-bezier" class="transitions-cubic-bezier">
+                        <h4>Cubic-Bezier</h4>
+                        <p>
+                            The cubic-bezier function in CSS transitions is most useful if you want precise control over where you want your transition property to accelerate or decelerate. Imagine your transition property as a graph, with a line going from point A to B where A refers to the start of your transition and B the end of it. The line does not have to go from A to B at a constant speed or just accelerate at the start and decelerate at the end. You can make it go however fast or slow as you want at four points of contact, written as your first x-coordinate, first y-coordinate, second x-coordinate, and second y-coordinate. The x-axis is duration and y-axis is the element's progression. Here is the syntax: <code>transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1)</code>. This cubic-bezier function will produce a transition that starts quickly, slows down in the middle, and accelerates towards the end as well. It can be difficult trying to envision where you want your four points of contact to be, so we recommend this <a href="https://cubic-bezier.com/">cubic-bezier calculator</a> that will do most of the work for you. All you have to do is move the points around!
+                        </p>
+
+                        <img src="" alt="">
+                    </div>
+                </div>
             </article>
         </section>
         
