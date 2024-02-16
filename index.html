@@ -27,20 +27,68 @@
             <h1>CSS</h1>
             <h2>Transitions</h2>
             <h2>Transforms</h2>
-            <h2>Animaations</h2>
+            <h2>Animations</h2>
         </section>
-        
+
+        <div id="sidebar">
+            <h2>Table of Contents</h2>
+            <ul id="ul-main">
+              <li><a href="#keyframes">Keyframes</a></li>
+                   <ul id="ul-sub">
+                       <li><a href="#keyframe-example-one">Keyframe Example</a></li>
+                       <li><a href="#keyframe-name">Keyframe Name</a></li>
+                       <li><a href="#keyframe-selector">Keyframe Selector</a></li>
+                       <li><a href="#keyframe-block">Keyframe Block</a></li>
+                   </ul>
+            </ul>
+            
+            <ul id="ul-main">
+                <li><a href="transitions">Transitions</a></li>
+                    <ul id="ul-sub">
+                        <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
+                        <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
+                        <li><a href="#transitions-syntax-h3">Syntax</a></li>
+                        <li><a href="#transitions-nav-items-h3">Applying Transitions to Nav Items</a></li>
+                        <li><a href="#transitions-js-h3">Using JavaScript in CSS Transitions</a></li>
+                        <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
+                        <li><a href="#transitions-timing-glossary-h3">Transition-Timing-Function Glossary</a></li>
+                        <ul>
+                            <li><a href="#transitions-key-values">Key Values</a></li>
+                            <li><a href="#transitions-step-values">Step Values and Jump Values</a></li>
+                            <li><a href="#step-end-start">Step-End and Step-Start</a></li>
+                            <li><a href="#transitions-cubic-bezier">Cubic-Bezier</a></li>
+                        </ul>
+                       
+
+                    </ul>
+
+            </ul>  
+
+            <ul>
+                <li><a href="#transform">Transforms</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#animations">Animations</a></li>
+                    <ul>
+                       <li><a href="#animation-begin">How to begin</a></li>
+                       <li><a href="#composite">Composite Operation</a></li>
+                       <li><a href="#animation-syntax">Syntax</a></li>
+                    </ul>
+            </ul>
+        </div>
+
+
         <section class="keyframes" id="keyframes">
             <article>
                 <h2>Keyframe Intro</h2>
                 <p>Keyframes are most important part of creating animations in css. Their job is define the steps in an animation sequence. This allows us to control how a set element changes its style over a set duration. The keyframes specify the behaviour of one cycle of the animation; the animation may iterate zero or more times.The way that key frames are defined are by using: `@keyframes` rule. Then the name we set set for the animation sequence.
                 </p>
-                <img src="" alt="">
                 
             </article>
             
             <article>
-                <h2>Keyframe Example</h2>
+                <h2 id="keyframe-example-one">Keyframe Example</h2>
                 <p>In the example we see here that <keyframes-name> `box`is the name of the animation sequence.</p>
                     <ol>
                         <li><p>The percentages <keyframe-selector>
@@ -50,7 +98,7 @@
                         <li><p>In these points in time we can style the element. In this example we choose to 0, 0.5 and 1 opacity during those 3 stages that we set.</p></li>
                         <li><p>All these nested in a <keyframe-block></p></li>
                     </ol>
-                <img src="" alt="">
+                <img src="images/keyframe-example.png" alt="Example of a basic keyframe operation.">
             </article>
 
             
@@ -72,24 +120,22 @@
                     <br>@keyframes "initial" { /* ... */ }
                     <br>@keyframes "None" { /* ... */ }
                 </p>
-                <img src="" alt="">
             </article>
 
             <article>
-                <h2>Keyframe Selector</h2>
+                <h2 id="keyframes-slector">Keyframe Selector</h2>
                 <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
 
                     The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
-                <img src="" alt="">
+                
             </article>
 
             <article>
-                <h2>Keyframe Block</h2>
+                <h2 id="keyframe-block">Keyframe Block</h2>
                 <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
                 The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
                         
                 </p>
-                 <img src="" alt="">
             </article>            
         </section>
         
@@ -203,7 +249,7 @@
                 <div class="transitions-timing-glossary">
                     <h3 id="transitions-timing-glossary-h3">Transition-Timing-Function Glossary</h3>
 
-                    <div class="transitions-key-values">
+                    <div class="transitions-key-values" id="transitions-key-values">
                         <h4>Key Values</h4>
                         <p>
                             Start with ease, ease-in, ease-out, ease-in-out, and linear when you are just getting to know CSS Transitions! More details about step-start and step-end are provided <a href="#step-end-start">here</a>. Regarding cubic-bezier, click <a href="#transitions-cubic-bezier">here</a>.
@@ -252,7 +298,7 @@
                         </table>
                     </div>
 
-                    <div class="transitions-step-values">
+                    <div class="transitions-step-values" id="transitions-step-values">
                         <h4>Step Values and Jump Values</h4>
                         <p>
                             The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
