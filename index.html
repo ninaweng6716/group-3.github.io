@@ -439,7 +439,24 @@
                                                     <br>animation-iteration-count: infinite;
                                                     <br>animation-direction: alternate; <br>}</code><br>can be shortened into <br><code>p { <br>animation: 3s infinite alternate slidein; <br>}</code></p>
 
-                <h3>Setting multiple animation property values</h3>
+                <h3 id="multiple-animation-values">Setting multiple animation property values</h3>
+                <div class="box-animation"></div>
+                <p>CSS animation longhand properties can accept multiple values, separated by commas. This can be used when you want to apply multiple animations to one rule and set different durations, iterations, and more.</p>
+                <p>In this code example, we see three duration, and three iteration count values. <br><code> animation-name: fadeInOut, moveLeft300px, bounce; <br>animation-duration: 2.5s, 5s, 1s; <br>animation-iteration-count: 2, 1, 5;</code></p>
+                <p>This animation, seen on the box is then initiated using the @keyframe rule function.</p>
+
+                <h3 id="animation-repeat">Repeating the animation.</h3>
+                <p class="animation-iteration-count">Animation-iteration-count property.</p>
+                <p>This example you see has an infinite repeat loop. <br><code>animation-duration: 3s<br><code>animation-name: slidein;<br>animation-iteration-count: infinite;<br>animation-direction: alternate;</code></p>
+                
+                <h3 id="using-js-enhancing-animations">Using Animation Events</h3>
+                <p>While not in the scope of this project, it's necessary to understand when to use JavaScript to enhance your animations. You can gain more control over your animations by making use of event listeners. It can be used to detect when animations start, finish, and begin a new iteration.</p>
+                <p>You also must use JavaScript to make display and content-visibility work properly, because with CSS alone, it will show as visibile the whole way through the animation.</p>
+                <p>JavaScript can also be used to get an animation to replay after the stopping point. Your users may want to see it again, and you may not want to use infinite iterations.</p>
+                
+                <h3 id="stopping-animation">Stopping an animation</h3>
+                <p>Removing the animation-name applied to an element will make it jump or cut to its next state. If you want the animation to come to a complete stop, or enable your users to stop animations on their own, you have to try a different approach.</p>
+                <p>There are two main tricks to this. First, make your animation as self-contained as possile. This means explicity writing a keyframe animation that goes through the full animation in one forward repitition. Second, use JavaScript to clear the animation being used when he iteration event fires.</p>
             </article>
         </section>
         
