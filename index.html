@@ -351,15 +351,54 @@
         </section>
         
         <section class="transforms" id="transform">
+            <h2 class = "transform-h2"> Transforms</h2>
             <article>
-                <h2 class = "transform-h2"> Transforms</h2>
-                <h3>What is the Transform in CSS?</h3>
-                <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate,scale,translate(move), skew, elements.
-                </p>
-                <img src="" alt="">
+                <div class="transforms-intro">
+                    <h3 id="transforms-intro-h3">What is the Transform in CSS?</h3>
+                    <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate, scale, translate(move), and, skew elements.
+                    </p>
+                    <img src="" alt="">
+                </div>
 
-                <h3>Properties</h3>
-                <p>Two major properties are used to define CSS transforms: transform and transform-origin.</p>
+                <div>
+                    <h3 id="transforms-properties-h3">Properties</h3>
+                    <p>Two major properties are used to define CSS transforms:</p>
+                    <table>
+                        <tr>
+                            <th>Transform</th>
+                            <th>Transform-origin</th>
+                        </tr>
+
+                        <tr>
+                            <td>transform: value(argument);<br>
+                            Here, value is the type of transformation and argument is the extent to which the transformation is applied. Some transformation declarations can take multiple arguments.</td>
+                            <td>The transform-origin property changes the position of the origin, the point where the transformation starts or is based around.</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <h3 id="transforms-2D">2D CSS Transformations</h3>
+
+                    <h4 id="translate-h4">Translate()</h4>
+                    <p>The translate() method translates (or moves) a page element up, down, left, and/or right on the page by a specified amount. In the parenthesis, the first number specifies the horizontal distance, and the second number specifies the vertical distance. In the example, the blue box has been translated 150 pixels to the right and 50 pixels down: <br> <code>transform: translate(150px, 50px)</code></p> 
+                    <img src="" alt=""> 
+
+                    <h4 id="rotate-h4">Rotate()</h4>
+                    <p>The rotate() method rotates a page element. By default, the element will rotate around its center. In the example, the blue box has been rotated 45deg on X-axis. <br> <code>transform:rotate(45deg);</code>
+                    <img src="" alt="">
+                    </p>
+
+                    <h4 id="scale-h4">Scale()</h4>
+                    <p>The scale() transform method changes the size of the target element. If we provide one argument with scale(), we increase or decrease the size of the element by a multiple of its original size. Scale() can get two arguments (separated by a comma), the first argument specifies the horizontal scaling and the second specifies the vertical scaling: <br> <code>transform: scale(2, .5);</code>
+                    <img src="" alt="">
+                    </p>
+
+                    <h4 id="skew-h4">Skew()</h4>
+                    <p>The skew() method skews an element along its X and/or Y axes. In the example, the blue box has been skewed 40 degrees on X-axis. <br> <code>transform:skew(40deg);</code></p>
+                    <img src="" alt="">
+                </div>
+
             </article>
         </section>
 
