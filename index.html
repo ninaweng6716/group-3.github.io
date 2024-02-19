@@ -32,7 +32,7 @@
             <h1>CSS</h1>
             <h2>Transitions</h2>
             <h2>Transforms</h2>
-            <h2>Animaations</h2>
+            <h2 class="h1-animate">Animations</h2>
         </section>
         
         <section class="keyframes" id="keyframes">
@@ -62,18 +62,18 @@
             <article>
                 <h2>Keyframe Name</h2>
                 <p>
-                    the names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
+                    the names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
 
                 <p>
-                    For example, the following two @keyframes rules have the same name, so the first will be ignored:
+                    For example, the following two @keyframes rules have the same name, so the first will be ignored:
                     @keyframes foo { /* ... */ }
                     @keyframes "foo" { /* ... */ }
-                    On the other hand, the following @keyframes rule’s name is different from the previous two rules:
+                    On the other hand, the following @keyframes rule's name is different from the previous two rules:
                     @keyframes FOO { /* ... */ }
-                    The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
+                    The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
                     @keyframes initial { /* ... */ }
                     @keyframes None { /* ... */ }
-                    However, those names can be specified with a <string>, so the following are both valid:
+                    However, those names can be specified with a <string>, so the following are both valid:
                     @keyframes "initial" { /* ... */ }
                     @keyframes "None" { /* ... */ }
                     </p>
@@ -82,16 +82,16 @@
 
             <article>
                 <h2>Keyframe Selector</h2>
-                <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
+                <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.
 
-                    The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
+                    The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>
                 <img src="" alt="">
             </article>
 
             <article>
                 <h2>Keyframe Block</h2>
-                <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
-                The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
+                <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
+                The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.
                         
                 </p>
                  <img src="" alt="">

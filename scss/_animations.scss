@@ -1,0 +1,33 @@
+.h1-animate {
+    animation-name: rotate-circle;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+}
+
+@keyframes rotate-circle {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.animate-h2 {
+    animation-name: slide;
+    animation-iteration-count: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
