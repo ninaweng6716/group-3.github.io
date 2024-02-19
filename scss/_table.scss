@@ -1,0 +1,14 @@
+@use 'vars' as *;
+
+table, td {
+    border: 1px solid $heading-color-light;
+    border-collapse: collapse;
+}
+
+thead {
+    color: $heading-color-light;
+}
+
+td {
+    padding: .25rem;
+}
