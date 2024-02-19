@@ -424,9 +424,71 @@ td {
 }
 .animate-h2 {
   animation-name: bounce;
-  animation-iteration-count: 3s;
+  animation-iteration-count: 1s;
+  animation-duration: infinite;
+}
+
+.box {
+  background-color: #D1F0B1;
+  width: 6.25rem;
+  height: 6.25rem;
+  position: relative;
+  animation-name: fadeInOut, moveLeft300px, bounce;
+  animation-duration: 2.5s, 5s, 1s;
+  animation-iteration-count: 2, 1, 5;
+}
+
+@keyframes fadeInOut {
+  from {
+    background-color: #D1F0B1;
+    color: #BED2D5;
+  }
+  to {
+    background-color: #BED2D5;
+    color: #D1F0B1;
+  }
+}
+@keyframes moveLeft300px {
+  from {
+    left: 0px;
+  }
+  25% {
+    left: 25px;
+  }
+  50% {
+    left: 50px;
+  }
+  75% {
+    left: 75px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+}
+.code-example-slidein-alternate {
+  animation-name: slideIn;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 50%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
