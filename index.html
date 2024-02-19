@@ -148,7 +148,10 @@
                     <p>
                         CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code>&lt;a&gt;</code>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
                     </p>
-                    <img src="" alt="">
+
+                    <picture>
+                        <img src="images/transitions-illustration.png" alt="This is a graphic representation of what CSS transitions can do">
+                    </picture>
                 </div>
                 
                 <div class="transitions-sub-properties">
@@ -165,35 +168,31 @@
 
                 <div class="transitions-syntax">
                     <h3 id="transitions-syntax-h3">Syntax</h3>
-                    <p>
-                        The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-out</code>
-                    </p>
+                        <p>
+                            The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-in</code>.
+                        </p>
+
+                    <div class="transitions-syntax-example">
+                        <h4 id="transitions-syntax-example-h4">Example</h4>
+                        <p>
+                            See the image for how you can easily incorporate CSS transitions in your webpage. Here, we are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
+                        </p>
+
+                        <picture>
+                            <img src="images/transitions-syntax-ex.png" alt="This is a picture showing the syntax of the CSS transitions property">
+                        </picture>
+                    </div>
 
                     <div class="transitions-syntax-multiple">
                         <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
                         <p>
-                            The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed.
+                            The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
                         </p>
-                        <img src="" alt="">
+
+                        <picture>
+                            <img src="images/transitions-syntax-multiple-values.png" alt="This is a picture showing how multiple values are written in the syntax for CSS transitions">
+                        </picture>
                     </div>
-                </div>
-
-
-                <div class="transitions-nav-items">
-                    <h3 id="transitions-nav-items-h3">Applying Transitions to Nav Items</h3>
-                    <p>
-                        If you want your <code>a</code> to transition to its hover state seamlessly, you can do so very easily using CSS Transitions. You simply need to follow these steps:
-                    </p>
-    
-                    <ol id="transitions-nav-items-ol">
-                        <li>Ensure that you have already set different properties on your <code>a:hover</code> in CSS. In this case, our hover state has a different background- and text-color.</li>
-                        <li>Style the transition on your <code>a</code>. Lets say we want all the properties that will change in the hover state to quickly transition at the start but slow down towards the end of the animation, we can use <code>transition: all ease-out</code>.</li>
-                        <li>If you want to add a duration to your transition so that it occurs over a specified period of time, you can add it in between the code you just wrote. The code is now <code>transition: all 0.5s ease-out</code>.</li>
-                    </ol>
-    
-                    <p>
-                        That is it! If you want to add a delay time value, you can stick it at the end of your transition code. 
-                    </p>
                 </div>
 
                 <div class="transitions-js">
@@ -207,9 +206,11 @@
                     <p>
                         You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
                     </p>
-                    <video src="">
 
+                    <video controls width="500">
+                        <source src="media/content-visibility-example-transitions.mp4" type="video/mp4" />
                     </video>
+
                 </div>
 
                 <div class="transitions-glossary">
