@@ -400,6 +400,23 @@
                     <img src="" alt="">
                 </div>
 
+                <div>
+                    <h3 id="transforms-3D">3D CSS Transformations</h3>
+                    <p>Three-dimensional CSS transformations utilize the Z-axis of the page. If you imagine the width and height of your screen as the X and Y-axes respectively, the Z-axis is the “depth” of your screen. A greater Z value makes the element appear "closer" to you.</p> 
+                    <h4 id="perspective-h4">Perspective()</h4>
+                    <p>The perspective() value sets the depth of the element on the Z-axis. It toggles how “close” or “far away” the element appears. perspective() is used in conjunction with other 3D transformation methods.</p>
+
+                    <h4>Transform: rotateX() and rotateY()</h4>
+                    <p>Like rotate(), the rotateX() and rotateY() values rotate our div, but “around” the X and Y-axes. When these methods are used with perspective(), the rotated element appears to rotate toward us, as you can see in the example: <br> <code>transform: perspective(500px) translate(50px) rotate(70deg);</code></p>
+                    <img src="" alt="">
+                </div>
+
+                <div>
+                    <h3 id="transform-origin-h3">Transform:origin Property</h3>
+                    <p>We can see the effect of transform-origin most clearly with the rotate() method. In the example, we use transform-origin to move the center point of rotation: <br> <code>transform-origin: bottom right;<br>transform: rotate(45deg);</code></p>
+                    <img src="" alt="">
+                </div>
+
             </article>
         </section>
 
