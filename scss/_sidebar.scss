@@ -1,6 +1,16 @@
+@use 'vars' as*;
+@use 'mixin' as*;
+
 #sidebar {
+  display: none;
+}
+
+@include media {
+
+  #sidebar {
+    display: block;
     width: 250px;
-    background-color: #BED2D5;
+    background-color: $sidebar-bg-color;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -22,7 +32,7 @@
   }
   #sidebar ul li a {
     text-decoration: double;
-    color: #353A47;
+    color: $text-color-dark;
     font-size: 1rem;
     display: block;
     padding: 5px;
@@ -30,5 +40,6 @@
     transition: background-color 0.3s ease;
   }
   #sidebar ul li a:hover {
-    background-color: #D1F0B1;
+    background-color: $brand-color;
   }
+}

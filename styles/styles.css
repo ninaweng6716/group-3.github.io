@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-content {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -395,13 +395,38 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-#keyframes, #transitions, #transforms, #animations {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 2rem;
+.banner h1 {
+  left: 5rem;
+  top: 3rem;
 }
 
+.banner-h2 {
+  right: 20rem;
+  top: 5rem;
+}
+
+.banner-h2-h2 {
+  right: 18rem;
+  top: 15rem;
+}
+
+.h1-animate {
+  right: 16rem;
+  top: 25rem;
+}
+
+@media (min-width: 50rem) {
+  .keyframes-grid, .transitions-grid, #transform, .animations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  table, video, .table {
+    grid-column: span 2;
+  }
+}
 header {
   background-color: #D1F0B1;
 }
@@ -436,45 +461,46 @@ td {
 }
 
 #sidebar {
-  width: 250px;
-  background-color: #BED2D5;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow-y: auto;
+  display: none;
 }
 
-#sidebar h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+@media (min-width: 50rem) {
+  #sidebar {
+    display: block;
+    width: 250px;
+    background-color: #BED2D5;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  #sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #sidebar ul li {
+    margin-bottom: 5px;
+  }
+  #sidebar ul li a {
+    text-decoration: double;
+    color: #353A47;
+    font-size: 1rem;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  #sidebar ul li a:hover {
+    background-color: #D1F0B1;
+  }
 }
-
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#sidebar ul li {
-  margin-bottom: 5px;
-}
-
-#sidebar ul li a {
-  text-decoration: double;
-  color: #353A47;
-  font-size: 1rem;
-  display: block;
-  padding: 5px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-#sidebar ul li a:hover {
-  background-color: #D1F0B1;
-}
-
 .h1-animate {
   animation-name: rotate-circle;
   animation-iteration-count: infinite;
