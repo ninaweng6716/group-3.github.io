@@ -18,3 +18,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@mixin media {
+    @media (min-width: 50rem) {
+        @content;
+    }
+}
