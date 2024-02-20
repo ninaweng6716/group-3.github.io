@@ -535,5 +535,32 @@ td {
     width: 100%;
   }
 }
+.transitions-intro picture img {
+  width: 50rem;
+  transition: width 1s ease-in;
+}
+
+.transitions-intro picture img:hover {
+  width: 80rem;
+}
+
+.transitions-sub-properties ul li a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.transitions-sub-properties ul li a:hover {
+  background-color: #D1F0B1;
+  color: #353A47;
+}
+
+.transitions-cubic-bezier {
+  opacity: 0.25;
+  transition: opacity 2s cubic-bezier(0.11, 0, 0.5, 0) 0s;
+}
+
+.transitions-cubic-bezier:hover {
+  opacity: 1;
+}
 
 /*# sourceMappingURL=styles.css.map */
