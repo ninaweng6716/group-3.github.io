@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 50rem) {
-  .keyframes-grid, .transitions-grid, #transform, .animations-grid {
+  .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
