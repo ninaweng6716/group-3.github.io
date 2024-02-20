@@ -56,61 +56,48 @@
             <aside>
                 <h2>Table of Contents</h2>
                 <ul>
-                    <li><a href="#keyframes">Keyframes</a></li>
-                    <ul id="ul-sub">
-                        <li><a href="#keyframe-example-one">Keyframe Example</a></li>
-                        <li><a href="#keyframe-name">Keyframe Name</a></li>
-                        <li><a href="#keyframe-selector">Keyframe Selector</a></li>
-                        <li><a href="#keyframe-block">Keyframe Block</a></li>
-                    </ul>
+                    <li><a href="#keyframes"><strong>Keyframes</strong></a></li>
+                    <li><a href="#keyframe-example-one">Keyframe Example</a></li>
+                    <li><a href="#keyframe-name">Keyframe Name</a></li>
+                    <li><a href="#keyframe-selector">Keyframe Selector</a></li>
+                    <li><a href="#keyframe-block">Keyframe Block</a></li>
                 </ul>
                 
                 <ul>
-                    <li><a href="transitions">Transitions</a></li>
-                    <ul id="ul-sub">
-                        <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
-                        <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
-                        <li><a href="#transitions-syntax-h3">Syntax</a></li>
-                        <li><a href="#transitions-nav-items-h3">Applying Transitions to Nav Items</a></li>
-                        <li><a href="#transitions-js-h3">Using JavaScript in CSS Transitions</a></li>
-                        <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
-                        <li><a href="#transitions-timing-glossary-h3">Transition-Timing-Function Glossary</a></li>
-                        <ul>
-                        <li><a href="#transitions-key-values">Key Values</a></li>
-                        <li><a href="#transitions-step-values">Step Values and Jump Values</a></li>
-                        <li><a href="#step-end-start">Step-End and Step-Start</a></li>
-                        <li><a href="#transitions-cubic-bezier">Cubic-Bezier</a></li>
-                    </ul>
-                        
-                        
-                    </ul>
-                    
-                </ul>  
-                
-                <ul>
-                    <li><a href="#transform">Transforms</a></li>
-                    <ul id="ul-sub">
-                        <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
-                        <li><a href="#transforms-properties-h3">Transform Properties</a></li>
-                        <li><a href="#transforms-2D">2D CSS Transformations</a></li>
-                        <ul>
-                            <li><a href="#translate-h4">Translate()</a></li>
-                            <li><a href="#rotate-h4">Rotate()</a></li>
-                            <li><a href="#scale-h4">Scale()</a></li>
-                            <li><a href="#skew-h4">Skew()</a></li>
-                        </ul>
-                        <li><a href="#transforms-3D">3D CSS Transformations</a></li>
-                        <li><a href=" #transform-origin-h3">Transform Origin</a></li>
-                    </ul>
+                    <li><a href="transitions"><strong>Transitions</strong></a></li>
+                    <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
+                    <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
+                    <li><a href="#transitions-syntax-h3">Syntax</a></li>
+                    <li><a href="#transitions-nav-items-h3">Applying Transitions to Nav Items</a></li>
+                    <li><a href="#transitions-js-h3">Using JavaScript in CSS Transitions</a></li>
+                    <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
+                    <li><a href="#transitions-timing-glossary-h3">Transition-Timing-Function Glossary</a></li>
+                    <li><a href="#transitions-key-values">Key Values</a></li>
+                    <li><a href="#transitions-step-values">Step Values and Jump Values</a></li>
+                    <li><a href="#step-end-start">Step-End and Step-Start</a></li>
+                    <li><a href="#transitions-cubic-bezier">Cubic-Bezier</a></li>
                 </ul>
                 
                 <ul>
-                    <li><a href="#animations">Animations</a></li>
-                    <ul>
-                        <li><a href="#animation-begin">How to begin</a></li>
-                        <li><a href="#composite">Composite Operation</a></li>
-                        <li><a href="#animation-syntax">Syntax</a></li>
-                    </ul>
+                    <li><a href="#transform"><strong>Transforms</strong></a></li>
+                    <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
+                    <li><a href="#transforms-properties-h3">Transform Properties</a></li>
+                    <li><a href="#transforms-2D">2D CSS Transformations</a></li>
+                    <li><a href="#translate-h4">Translate()</a></li>
+                    <li><a href="#rotate-h4">Rotate()</a></li>
+                    <li><a href="#scale-h4">Scale()</a></li>
+                    <li><a href="#skew-h4">Skew()</a></li>
+                    <li><a href="#transforms-3D">3D CSS Transformations</a></li>
+                    <li><a href=" #transform-origin-h3">Transform Origin</a></li>
+                </ul>
+                
+                <ul>
+                    <li><a href="#animations"><strong>Animations</strong></a></li>
+                    <li><a href="#animation-begin">How to begin</a></li>
+                    <li><a href="#composite">Composite Operation</a></li>
+                    <li><a href="#animation-syntax">Syntax</a></li>
+                    <li><a href="#multiple-animation-values">Multiple Values</a></li>
+                    <li><a href="#stopping-animation">Stopping Animations</a></li>
                 </ul>
             </aside>
         </div>
@@ -125,17 +112,19 @@
                         <p>Keyframes are most important part of creating animations in css. Their job is define the steps in an animation sequence. This allows us to control how a set element changes its style over a set duration. The keyframes specify the behaviour of one cycle of the animation; the animation may iterate zero or more times.The way that key frames are defined are by using: `@keyframes` rule. Then the name we set set for the animation sequence.
                         </p>                      
                     </article>
-                    
+
+                    <!-- Got a few errors with unclosed <keyframe-???> elements -->
+                        <!-- If these are meant to be in the text, then they don't need tags. -->
                     <article>
                         <h3 id="keyframe-example-one">Keyframe Example</h3>
-                        <p>In the example we see here that <keyframes-name> `box`is the name of the animation sequence.</p>
+                        <p>In the example we see here that <keyframes-name>`box`</keyframes-name> the name of the animation sequence.</p>
                             <ol>
                                 <li><p>The percentages <keyframe-selector>
-                                    0%, 50%, 100% represent “points in time” during the animation. 
+                                    0%, 50%, 100% </keyframe-selector> represent “points in time” during the animation. 
                                     We can also use “from” and “to” instead of 0% and 100 %
                                 </p></li>
                                 <li><p>In these points in time we can style the element. In this example we choose to 0, 0.5 and 1 opacity during those 3 stages that we set.</p></li>
-                                <li><p>All these nested in a <keyframe-block></p></li>
+                                <li><p>All these nested in a keyframe-block.</p></li>
                             </ol>
                     </article>
                         
@@ -143,7 +132,9 @@
                             
                     <article>
                         <h3 id="keyframe-name">Keyframe Name</h3>
-                        <p>The names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The <custom-ident> additionally excludes the none keyword.</p>
+                        <p>The names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The
+                        <!-- Removed <custom-indent> element -->
+                            additionally excludes the none keyword.</p>
                                     
                         <p>For example, the following two @keyframes rules have the same name, so the first will be ignored:
                             <br>@keyframes foo { /* ... */ }
@@ -151,10 +142,10 @@
 
                         <p>On the other hand, the following @keyframes rule's name is different from the previous two rules:
                             <br>@keyframes FOO { /* ... */ }</p>
-                        <p>The following @keyframes rules are invalid because they use disallowed <custom-ident> values:
+                        <p>The following @keyframes rules are invalid because they use disallowed values:
                             <br>@keyframes initial { /* ... */ }
                             <br>@keyframes None { /* ... */ }</p>
-                        <p>However, those names can be specified with a <string>, so the following are both valid:
+                        <p>However, those names can be specified with a string, so the following are both valid:
                             <br>@keyframes "initial" { /* ... */ }
                             <br>@keyframes "None" { /* ... */ }
                         </p>
@@ -162,109 +153,104 @@
                                             
                     <article>
                         <h3>Keyframe Selector</h3>
-                        <p>The <keyframe-selector> for a <keyframe-block> consists of a comma-separated list of percentage values or the keywords from or to.</keyframe-block></keyframe-selector></p>                                                
+                        <p>The keyframe-selector for a keyframe-block consists of a comma-separated list of percentage values or the keywords from or to.</p>                                                
                         <p>The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>                                                  
-                        <img src="" alt="">
+                        <!-- <img src="" alt=""> -->
                     </article>
                                             
                     <article>
                         <h3 id="keyframe-block">Keyframe Block</h3>
-                        <p>The <keyframe-block> contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
-                        The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their <keyframe-block> to be ignored.                   
+                        <p>The keyframe-block contains properties and values. The properties defined by this specification are ignored in these rules, with the exception of animation-timing-function, the behavior of which is described below. In addition, properties qualified with !important are invalid and ignored.
+                        The keyword to is equivalent to the value 100%. Values less than 0% or higher than 100% are invalid and cause their keyframe-block to be ignored.                   
                         </p>
                     </article>            
                 </div>
             </section>
                                             
-        <section class="transitions" id="transitions">
-            <h2 class="transitions-h2">Transitions</h2>
-            <div class="transitions-grid">
-
-                <article class="transitions-article">
-                   
-                    <div class="transitions-intro">
-                        <h3 id="transitions-intro-h3">Why Use CSS Transitions?</h3>
-                        <p>
+            <section class="transitions" id="transitions">
+                <h2 class="transitions-h2">Transitions</h2>
+                <div class="transitions-grid">
+                    <article class="transitions-article">                 
+                        <div class="transitions-intro">
+                            <h3 id="transitions-intro-h3">Why Use CSS Transitions?</h3>
+                            <p>
                             CSS Transitions allows you to animate the transition between two states of an element. Let's say you have declared different properties for your <code>&lt;a&gt;</code> and its hover state. You can animate the transition between the two states using the transition property so that when you hover over your <code>&lt;a&gt;</code>, it transitions into its hover state seamlessly. You can even use it to animate the transition of multiple properties.
-                        </p>
-                        
-                    </div>
-                </article>
-                <picture>
-                    <img src="images/transitions-illustration.png" alt="This is a graphic representation of what CSS transitions can do">
-                </picture>
-                <article>
-                    <div class="transitions-sub-properties">
-                        <h3 id="transitions-sub-properties-h3">Transitions Sub-Properties</h3>
-                        <p>The transition property is broken down into:</p>
-                        <ul>
-                            <li><a href="#transition-property">transition-property</a></li>
-                            <li><a href="#transition-duration">transition-duration</a></li>
-                            <li><a href="#transition-timing">transition-timing-function</a></li>
-                            <li><a href="#transition-delay">transition-delay</a></li>
-                            <li><a href="#transition-behavior">transition-behavior</a></li>
-                        </ul>
-                    </div>
-                </article>   
-                <article>
-                    <div class="transitions-syntax">
-                        <h3 id="transitions-syntax-h3">Syntax</h3>
-                        <p>
-                            The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-in</code>.
-                        </p>
-                    </div>
-                </article>    
-                <article>
-                    <div class="transitions-syntax-example">
-                        <h4 id="transitions-syntax-example-h4">Example</h4>
-                        <p>
-                            See the image for how you can easily incorporate CSS transitions in your webpage. Here, we are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
-                        </p>
-                        
-                    </div>
-                </article>       
-                <picture>
-                    <img src="images/transitions-syntax-ex.png" alt="This is a picture showing the syntax of the CSS transitions property">
-                </picture>
+                            </p>
+                        </div>                      
+                    </article>
+                    <picture>
+                        <img src="images/transitions-illustration.png" alt="This is a graphic representation of what CSS transitions can do">
+                    </picture>
+                    <article>
+                        <div class="transitions-sub-properties">
+                            <h3 id="transitions-sub-properties-h3">Transitions Sub-Properties</h3>
+                            <p>The transition property is broken down into:</p>
+                            <ul>
+                                <li><a href="#transition-property">transition-property</a></li>
+                                <li><a href="#transition-duration">transition-duration</a></li>
+                                <li><a href="#transition-timing">transition-timing-function</a></li>
+                                <li><a href="#transition-delay">transition-delay</a></li>
+                                <li><a href="#transition-behavior">transition-behavior</a></li>
+                            </ul>
+                        </div>
+                    </article>   
+                    <article>
+                        <div class="transitions-syntax">
+                            <h3 id="transitions-syntax-h3">Syntax</h3>
+                            <p>
+                                The syntax for the transition property is simple. You can declare each of the transition sub-properties individually, or just use the shortform <code>transition: &lt;transition-property&gt; &lt;transition-duration&gt; &lt;transition-timing-function&gt; &lt;transition-delay&gt; &lt;transition-behavior&gt;</code>. Whatever you leave undeclared will stay their default values. Example: <code>transitions: all 1s ease-in</code>.
+                            </p>
+                        </div>
+                    </article>    
+                    <article>
+                        <div class="transitions-syntax-example">
+                            <h4 id="transitions-syntax-example-h4">Example</h4>
+                            <p>
+                                See the image for how you can easily incorporate CSS transitions in your webpage. Here, we are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
+                            </p>                        
+                        </div>
+                    </article>       
+                    <picture>
+                        <img src="images/transitions-syntax-ex.png" alt="This is a picture showing the syntax of the CSS transitions property">
+                    </picture>
                     
-                <picture>
-                    <img src="images/transitions-syntax-multiple-values.png" alt="This is a picture showing how multiple values are written in the syntax for CSS transitions">
-                </picture>
-                <article>
+                    <picture>
+                        <img src="images/transitions-syntax-multiple-values.png" alt="This is a picture showing how multiple values are written in the syntax for CSS transitions">
+                    </picture>
 
-                    <div class="transitions-syntax-multiple">
-                        <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
-                        <p>
-                            The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
-                        </p>
-                        
-                    </div>
-                </article>
-
+                    <article>
+                        <div class="transitions-syntax-multiple">
+                            <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
+                            <p>
+                                The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
+                            </p>                        
+                        </div>
+                    </article>
                 
-                <article>
-                    <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
+                    <article>
+                        <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
 
-                    <div class="transitions-js">
-                        <h4>Makes JavaScript Functionality Smoother</h4>
-                        <p>
-                            You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
-                        </p>
-                </article>
+                        <div class="transitions-js">
+                            <h4>Makes JavaScript Functionality Smoother</h4>
+                            <p>
+                                You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
+                            </p>
+                        </div>
+                    </article>
                 
-                <article>
-                    <h4>Transitions on Display and Content-Visibility</h4>
-                    <p>
-                        You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
-                    </p>
-                </article>        
+                    <article>
+                        <h4>Transitions on Display and Content-Visibility</h4>
+                        <p>
+                            You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
+                        </p>
+                    </article>        
             
-                <video controls width="500">
-                    <source src="media/content-visibility-example-transitions.mp4" type="video/mp4" />
-                </video>
+                    <video controls width="500">
+                        <source src="media/content-visibility-example-transitions.mp4" type="video/mp4">
+                    </video>
                 
-                <article class="table">
-                    <div class="transitions-glossary">
+                    <article class="table">
+                        <div class="transitions-glossary">
                         <h3 id="transitions-glossary-h3">Transitions Sub-Property Glossary</h3>
                         <table>
                             <thead>
@@ -297,13 +283,13 @@
                             </tbody>
                         </table>
                     </div>
-                </article>
+                    </article>
 
-                <article class="table">
-                    <div class="transitions-timing-glossary">
-                        <h3 id="transitions-timing-glossary-h3">Transition-Timing-Function Glossary</h3>
-                    </div>                  
-                    <div class="transitions-key-values" id="transitions-key-values">
+                    <article class="table">
+                        <div class="transitions-timing-glossary">
+                            <h3 id="transitions-timing-glossary-h3">Transition-Timing-Function Glossary</h3>
+                        </div>                  
+                        <div class="transitions-key-values" id="transitions-key-values">
                             <h4>Key Values</h4>
                             <p>
                                 Start with ease, ease-in, ease-out, ease-in-out, and linear when you are just getting to know CSS Transitions! More details about step-start and step-end are provided <a href="#step-end-start">here</a>. Regarding cubic-bezier, click <a href="#transitions-cubic-bezier">here</a>.
@@ -351,14 +337,14 @@
                             </tbody>
                         </table>
                     </div>
-                </article> 
+                    </article> 
                 
-                <article class="table">
-                    <div class="transitions-step-values" id="transitions-step-values">
-                        <h4>Step Values and Jump Values</h4>
-                        <p>
-                            The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
-                        </p>
+                    <article class="table">
+                        <div class="transitions-step-values" id="transitions-step-values">
+                            <h4>Step Values and Jump Values</h4>
+                            <p>
+                                The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
+                            </p>
                         <table class="step-values-table">
                             <thead>
                                 <tr>
@@ -386,42 +372,44 @@
                             </tbody>
                         </table>
                     </div>
-                </article>
-                <article>
-                    <div id="step-end-start" class="step-end-start">
-                        <h4>Step-End and Step-Start</h4>
-                        <p>
-                            These timing functions are most useful when working with more complex transition functions, such as if you are dealing with multiple transition properties. You can have a value of step-start or step-end in place of your other key transition-timing-functions.
-                        </p>
-                    </div>
-                </article>    
+                    </article>
+                    <article>
+                        <div id="step-end-start" class="step-end-start">
+                            <h4>Step-End and Step-Start</h4>
+                            <p>
+                                These timing functions are most useful when working with more complex transition functions, such as if you are dealing with multiple transition properties. You can have a value of step-start or step-end in place of your other key transition-timing-functions.
+                            </p>
+                        </div>
+                    </article>    
                     
-                    <div id="transitions-cubic-bezier" class="transitions-cubic-bezier">
-                        <h4>Cubic-Bezier</h4>
-                        <p>
-                            The cubic-bezier function in CSS transitions is most useful if you want precise control over where you want your transition property to accelerate or decelerate. Imagine your transition property as a graph, with a line going from point A to B where A refers to the start of your transition and B the end of it. The line does not have to go from A to B at a constant speed or just accelerate at the start and decelerate at the end. You can make it go however fast or slow as you want at four points of contact, written as your first x-coordinate, first y-coordinate, second x-coordinate, and second y-coordinate. The x-axis is duration and y-axis is the element's progression. Here is the syntax: <code>transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1)</code>. This cubic-bezier function will produce a transition that starts quickly, slows down in the middle, and accelerates towards the end as well. It can be difficult trying to envision where you want your four points of contact to be, so we recommend this <a href="https://cubic-bezier.com/">cubic-bezier calculator</a> that will do most of the work for you. All you have to do is move the points around!
-                        </p>
-                        
-                        <img src="" alt="">
-                    </div>
-                    </div>
-                </article>
+                    <article>
+                        <div id="transitions-cubic-bezier" class="transitions-cubic-bezier">
+                            <h4>Cubic-Bezier</h4>
+                            <p>
+                                The cubic-bezier function in CSS transitions is most useful if you want precise control over where you want your transition property to accelerate or decelerate. Imagine your transition property as a graph, with a line going from point A to B where A refers to the start of your transition and B the end of it. The line does not have to go from A to B at a constant speed or just accelerate at the start and decelerate at the end. You can make it go however fast or slow as you want at four points of contact, written as your first x-coordinate, first y-coordinate, second x-coordinate, and second y-coordinate. The x-axis is duration and y-axis is the element's progression. Here is the syntax: <code>transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1)</code>. This cubic-bezier function will produce a transition that starts quickly, slows down in the middle, and accelerates towards the end as well. It can be difficult trying to envision where you want your four points of contact to be, so we recommend this <a href="https://cubic-bezier.com/">cubic-bezier calculator</a> that will do most of the work for you. All you have to do is move the points around!
+                            </p>
+                        </div>
+                    </article>
+                    <!-- <img src="" alt=""> -->
             </div>
-        </section>
+            </section>
         
-        <section class="transforms" id="transform">
-            <h2 class = "transform-h2"> Transforms</h2>
-            <article>
-                <div class="transforms-intro">
-                    <h3 id="transforms-intro-h3">What is the Transform in CSS?</h3>
-                    <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate, scale, translate(move), and, skew elements.
-                    </p>
+            <section class="transforms" id="transform">
+                <h2 class = "transform-h2"> Transforms</h2>
+                <div class="transforms-grid">
+
                     <img src="images/transform.jpg" alt="4 examples of rotate,scale,skew and, translate">
-                </div>
-                
-                <div>
-                    <h3 id="transforms-properties-h3">Transform Properties</h3>
-                    <p>Two major properties are used to define CSS transforms:</p>
+                    
+                    <article>
+                        <div class="transforms-intro">
+                            <h3 id="transforms-intro-h3">What is the Transform in CSS?</h3>
+                            <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate, scale, translate(move), and, skew elements.
+                            </p>
+                        </div>
+                        <h3 id="transforms-properties-h3">Transform Properties</h3>
+                        <p>Two major properties are used to define CSS transforms:</p>
+                    </article>
+                    
                     <table>
                         <tr>
                             <th>Transform</th>
@@ -431,51 +419,63 @@
                         <tr>
                             <td>transform: value(argument);<br>
                                 Here, value is the type of transformation and argument is the extent to which the transformation is applied. Some transformation declarations can take multiple arguments.</td>
-                            <td>The transform-origin property changes the position of the origin, the point where the transformation starts or is based around.</td>
-                        </tr>
+                                <td>The transform-origin property changes the position of the origin, the point where the transformation starts or is based around.</td>
+                            </tr>
                     </table>
-                </div>
-                
-                <div>
-                    <h3 id="transforms-2D">2D CSS Transformations</h3>
-                    
-                    <h4 id="translate-h4">Translate()</h4>
-                    <p>The translate() method translates (or moves) a page element up, down, left, and/or right on the page by a specified amount. In the parenthesis, the first number specifies the horizontal distance, and the second number specifies the vertical distance. In the example, the blue box has been translated 150 pixels to the right and 50 pixels down: <br> <code>transform: translate(150px, 50px)</code></p> 
+                        
+                    <article>
+                        <h3 id="transforms-2D">2D CSS Transformations</h3>
+                            
+                        <h4 id="translate-h4">Translate()</h4>
+                        <p>The translate() method translates (or moves) a page element up, down, left, and/or right on the page by a specified amount. In the parenthesis, the first number specifies the horizontal distance, and the second number specifies the vertical distance. In the example, the blue box has been translated 150 pixels to the right and 50 pixels down: <br> <code>transform: translate(150px, 50px)</code></p> 
+                    </article> 
+                        
                     <img src="images/transform-translate.jpg" alt="example of transform translate() method"> 
-                    
-                    <h4 id="rotate-h4">Rotate()</h4>
-                    <p>The rotate() method rotates a page element. By default, the element will rotate around its center. In the example, the blue box has been rotated 45deg on X-axis. <br> <code>transform:rotate(45deg);</code>
-                    </p>
+                        
+                    <article>
+                        <h4 id="rotate-h4">Rotate()</h4>
+                        <p>The rotate() method rotates a page element. By default, the element will rotate around its center. In the example, the blue box has been rotated 45deg on X-axis. <br> <code>transform:rotate(45deg);</code>
+                        </p>
+                    </article>
+
                     <img src="images/transform-rotate.jpg" alt="example of transform rotate() method">
-                    
-                    <h4 id="scale-h4">Scale()</h4>
-                    <p>The scale() transform method changes the size of the target element. If we provide one argument with scale(), we increase or decrease the size of the element by a multiple of its original size. Scale() can get two arguments (separated by a comma), the first argument specifies the horizontal scaling and the second specifies the vertical scaling: <br> <code>transform: scale(2, .5);</code>
-                    </p>
+                        
+                    <article>
+                        <h4 id="scale-h4">Scale()</h4>
+                        <p>The scale() transform method changes the size of the target element. If we provide one argument with scale(), we increase or decrease the size of the element by a multiple of its original size. Scale() can get two arguments (separated by a comma), the first argument specifies the horizontal scaling and the second specifies the vertical scaling: <br> <code>transform: scale(2, .5);</code>
+                        </p>
+                    </article>
+                        
                     <img src="images/transform-scale.jpg" alt="example of transform scale() method">
-                    
-                    <h4 id="skew-h4">Skew()</h4>
-                    <p>The skew() method skews an element along its X and/or Y axes. In the example, the blue box has been skewed 40 degrees on X-axis. <br> <code>transform:skew(40deg);</code></p>
+                        
+                    <article>
+                        <h4 id="skew-h4">Skew()</h4>
+                        <p>The skew() method skews an element along its X and/or Y axes. In the example, the blue box has been skewed 40 degrees on X-axis. <br> <code>transform:skew(40deg);</code></p>
+                    </article>
+                        
                     <img src="images/transform-skew.jpg" alt="example of transform skew() method">
-                </div>
-                
-                <div>
-                    <h3 id="transforms-3D">3D CSS Transformations</h3>
-                    <p>Three-dimensional CSS transformations utilize the Z-axis of the page. If you imagine the width and height of your screen as the X and Y-axes respectively, the Z-axis is the “depth” of your screen. A greater Z value makes the element appear "closer" to you.</p> 
-                    <h4 id="perspective-h4">Perspective()</h4>
-                    <p>The perspective() value sets the depth of the element on the Z-axis. It toggles how “close” or “far away” the element appears. perspective() is used in conjunction with other 3D transformation methods.</p>
-                    
-                    <h4>Transform: rotateX() and rotateY()</h4>
-                    <p>Like rotate(), the rotateX() and rotateY() values rotate our div, but “around” the X and Y-axes. When these methods are used with perspective(), the rotated element appears to rotate toward us, as you can see in the example: <br> <code>transform: perspective(500px) translate(50px) rotate(70deg);</code></p>
+                        
+                    <article>
+                        <h3 id="transforms-3D">3D CSS Transformations</h3>
+                        <p>Three-dimensional CSS transformations utilize the Z-axis of the page. If you imagine the width and height of your screen as the X and Y-axes respectively, the Z-axis is the “depth” of your screen. A greater Z value makes the element appear "closer" to you.</p> 
+                    </article>
+                    <article>
+                        <h4 id="perspective-h4">Perspective()</h4>
+                        <p>The perspective() value sets the depth of the element on the Z-axis. It toggles how “close” or “far away” the element appears. perspective() is used in conjunction with other 3D transformation methods.</p>
+                    </article>
+                    <article>       
+                        <h4>Transform: rotateX() and rotateY()</h4>
+                        <p>Like rotate(), the rotateX() and rotateY() values rotate our div, but “around” the X and Y-axes. When these methods are used with perspective(), the rotated element appears to rotate toward us, as you can see in the example: <br> <code>transform: perspective(500px) translate(50px) rotate(70deg);</code></p>
+                    </article>
+
                     <img src="images/transform-perspective.jpg" alt="example of transform perspective() method">
-                </div>
-                
-                <div>
-                    <h3 id="transform-origin-h3">Transform:origin Property</h3>
-                    <p>We can see the effect of transform-origin most clearly with the rotate() method. In the example, we use transform-origin to move the center point of rotation: <br> <code>transform-origin: bottom right;<br>transform: rotate(45deg);</code></p>
+                        
+                    <article>
+                        <h3 id="transform-origin-h3">Transform:origin Property</h3>
+                        <p>We can see the effect of transform-origin most clearly with the rotate() method. In the example, we use transform-origin to move the center point of rotation: <br> <code>transform-origin: bottom right;<br>transform: rotate(45deg);</code></p>
+                    </article>
                     <img src="images/transform-origin.jpg" alt="example of transform origin property">
-                </div>
-                
-            </article>
+            </div>
         </section>
         
         <section class="animations" id="animations">
@@ -498,7 +498,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Sub-Properties</th>
+                            <th colspan="2">Sub-Properties</th>
                         </tr>
                     </thead>
                     <tr>
@@ -546,13 +546,12 @@
 
                 <h3 id="composite">Composite Operation</h3>
                 <p>The value of a property in a CSS rule is the underlying value, and the value of that same property in a keyframe is its effect value. What Composite Operation does is combine an effect value with an underlying value.</p>
-                <p>There are three types of operations:
+                <p>There are three types of operations:</p>
                     <ol>
                         <li>Replace, which replaces the underlying value.</li>
                         <li>Add, which adds to the underlying value.</li>
                         <li>Accumulate, which combines with the underlying value.</li>
                     </ol>
-                </p>
                 </article>
                 <article>
 
@@ -571,9 +570,9 @@
                 <p>In this code example, we see three duration, and three iteration count values. <br><code> animation-name: fadeInOut, moveLeft300px, bounce; <br>animation-duration: 2.5s, 5s, 1s; <br>animation-iteration-count: 2, 1, 5;</code></p>
                 <p>This animation, seen on the box is then initiated using the @keyframe rule function.</p>
                 </article>
-                <article>
-                <div class="box-animation"></div>
-                </article>      
+
+                <div class="box-animation"></div> 
+
                 <article>
                 <h3 id="using-js-enhancing-animations">Using Animation Events</h3>
                 <p>While not in the scope of this project, it's necessary to understand when to use JavaScript to enhance your animations. You can gain more control over your animations by making use of event listeners. It can be used to detect when animations start, finish, and begin a new iteration.</p>
