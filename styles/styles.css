@@ -381,6 +381,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   background-color: #D1F0B1;
+  padding: 0 1rem 0 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header img {
@@ -388,17 +393,61 @@ header img {
   width: auto;
 }
 
-nav {
-  background-color: #D1F0B1;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav ul {
-  list-style: none;
-}
-nav a {
-  color: #353A47;
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
   text-decoration: none;
 }
 
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+nav {
+  background-color: #D1F0B1;
+}
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;

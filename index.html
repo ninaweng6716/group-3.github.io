@@ -15,21 +15,31 @@
     <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="styles/styles.css">
+
+        <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <!-- logo -->
         <img src="images/sfc-logo.svg" alt="Light orange cat sitting on a keyboard.">
         <nav>
-            <ul>
-                <li><a href="#transitions">Transitions</a></li>
-                <li><a href="#transform">Transform</a></li>
-                <li><a href="#animations">Animations</a></li>
-                <li><a href="#keyframes">Keyframes</a></li>
-                <li><a href="#about">About</a></li>
+            <ul class="menu">
+                <li><a class="menuItem" href="#transitions">Transitions</a></li>
+                <li><a class="menuItem" href="#transform">Transform</a></li>
+                <li><a class="menuItem" href="#animations">Animations</a></li>
+                <li><a class="menuItem" href="#keyframes">Keyframes</a></li>
+                <li><a class="menuItem" href="#about">About</a></li>
             </ul>
+            <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
         </nav>
+
     </header>
 
     <main>
