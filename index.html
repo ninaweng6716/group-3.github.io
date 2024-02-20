@@ -75,8 +75,21 @@
 
             </ul>  
 
-            <ul>
+            <ul id="ul-main">
                 <li><a href="#transform">Transforms</a></li>
+                    <ul id="ul-sub">
+                        <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
+                        <li><a href="#transforms-properties-h3">Transform Properties</a></li>
+                        <li><a href="#transforms-2D">2D CSS Transformations</a></li>
+                        <ul>
+                            <li><a href="#translate-h4">Translate()</a></li>
+                            <li><a href="#rotate-h4">Rotate()</a></li>
+                            <li><a href="#scale-h4">Scale()</a></li>
+                            <li><a href="#skew-h4">Skew()</a></li>
+                        </ul>
+                        <li><a href="#transforms-3D">3D CSS Transformations</a></li>
+                        <li><a href=" #transform-origin-h3">Transform Origin</a></li>
+                    </ul>
             </ul>
 
             <ul>
@@ -371,11 +384,11 @@
                     <h3 id="transforms-intro-h3">What is the Transform in CSS?</h3>
                     <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate, scale, translate(move), and, skew elements.
                     </p>
-                    <img src="" alt="">
+                    <img src="images/transform.jpg" alt="4 examples of rotate,scale,skew and, translate">
                 </div>
 
                 <div>
-                    <h3 id="transforms-properties-h3">Properties</h3>
+                    <h3 id="transforms-properties-h3">Transform Properties</h3>
                     <p>Two major properties are used to define CSS transforms:</p>
                     <table>
                         <tr>
@@ -396,21 +409,21 @@
 
                     <h4 id="translate-h4">Translate()</h4>
                     <p>The translate() method translates (or moves) a page element up, down, left, and/or right on the page by a specified amount. In the parenthesis, the first number specifies the horizontal distance, and the second number specifies the vertical distance. In the example, the blue box has been translated 150 pixels to the right and 50 pixels down: <br> <code>transform: translate(150px, 50px)</code></p> 
-                    <img src="" alt=""> 
+                    <img src="images/transform-translate.jpg" alt="example of transform translate() method"> 
 
                     <h4 id="rotate-h4">Rotate()</h4>
                     <p>The rotate() method rotates a page element. By default, the element will rotate around its center. In the example, the blue box has been rotated 45deg on X-axis. <br> <code>transform:rotate(45deg);</code>
-                    <img src="" alt="">
                     </p>
+                    <img src="images/transform-rotate.jpg" alt="example of transform rotate() method">
 
                     <h4 id="scale-h4">Scale()</h4>
                     <p>The scale() transform method changes the size of the target element. If we provide one argument with scale(), we increase or decrease the size of the element by a multiple of its original size. Scale() can get two arguments (separated by a comma), the first argument specifies the horizontal scaling and the second specifies the vertical scaling: <br> <code>transform: scale(2, .5);</code>
-                    <img src="" alt="">
                     </p>
+                    <img src="images/transform-scale.jpg" alt="example of transform scale() method">
 
                     <h4 id="skew-h4">Skew()</h4>
                     <p>The skew() method skews an element along its X and/or Y axes. In the example, the blue box has been skewed 40 degrees on X-axis. <br> <code>transform:skew(40deg);</code></p>
-                    <img src="" alt="">
+                    <img src="images/transform-skew.jpg" alt="example of transform skew() method">
                 </div>
 
                 <div>
@@ -421,13 +434,13 @@
 
                     <h4>Transform: rotateX() and rotateY()</h4>
                     <p>Like rotate(), the rotateX() and rotateY() values rotate our div, but “around” the X and Y-axes. When these methods are used with perspective(), the rotated element appears to rotate toward us, as you can see in the example: <br> <code>transform: perspective(500px) translate(50px) rotate(70deg);</code></p>
-                    <img src="" alt="">
+                    <img src="images/transform-perspective.jpg" alt="example of transform perspective() method">
                 </div>
 
                 <div>
                     <h3 id="transform-origin-h3">Transform:origin Property</h3>
                     <p>We can see the effect of transform-origin most clearly with the rotate() method. In the example, we use transform-origin to move the center point of rotation: <br> <code>transform-origin: bottom right;<br>transform: rotate(45deg);</code></p>
-                    <img src="" alt="">
+                    <img src="images/transform-origin.jpg" alt="example of transform origin property">
                 </div>
 
             </article>
