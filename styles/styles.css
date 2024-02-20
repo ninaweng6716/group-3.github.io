@@ -379,6 +379,29 @@ h1, h2, h3, h4, h5, h6 {
   color: #BED2D5;
 }
 
+.main-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.banner h1, .banner h2 {
+  position: absolute;
+}
+
+#keyframes, #transitions, #transforms, #animations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
 header {
   background-color: #D1F0B1;
 }
@@ -416,7 +439,7 @@ td {
   width: 250px;
   background-color: #BED2D5;
   padding: 20px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   height: 100%;
