@@ -3,15 +3,20 @@
 
 header {
     background-color: $brand-color;
-    padding: 0 1rem 0 1rem;
+    padding: 1rem;
     align-items: center;
     @include flex-layout;
+
+    .closeIcon {
+      display: none;
+    }
 }
 
 
 header img {
     height: 6.25rem;
     width: auto;
+    
 }
 
 * {
@@ -41,11 +46,10 @@ header img {
     border: black solid 1px;
     background: white;
     cursor: pointer;
+    width: 34px;
+    height: 34px;
   }
   
-  .closeIcon {
-    display: none;
-  }
   
   .menu {
     position: fixed;

@@ -381,11 +381,14 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   background-color: #D1F0B1;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
   align-items: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+header .closeIcon {
+  display: none;
 }
 
 header img {
@@ -420,10 +423,8 @@ header img {
   border: black solid 1px;
   background: white;
   cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
+  width: 34px;
+  height: 34px;
 }
 
 .menu {
@@ -577,11 +578,9 @@ td {
 @keyframes slideIn {
   from {
     margin-left: 50%;
-    width: 150%;
   }
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }
 .transitions-intro picture img {
