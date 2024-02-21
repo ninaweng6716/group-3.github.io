@@ -1,19 +1,27 @@
 @use 'vars' as *;
 @use 'mixin' as *;
 
-nav {
-    background-color: $brand-color;
-    // display: none;
+// @include media{
 
-    ul {
-        // list-style: none;
-        // display: flex;
-        // flex-direction: row;
-    }
+//     .hamburger {
+//         display: none;
+//     }
 
-    a {
-        // color: $text-color-dark;
-        // text-decoration: none;
-        // padding: 0 1rem;
-    }
-}
+
+//     nav {
+//         background-color: $brand-color;
+//         display: block;
+    
+//         ul {
+//             list-style: none;
+//             display: flex;
+//             flex-direction: row;
+//         }
+    
+//         a {
+//             color: $text-color-dark;
+//             text-decoration: none;
+//             padding: 0 1rem;
+//         }
+//     }
+// }

@@ -69,3 +69,39 @@ header img {
   .showMenu {
     transform: translateY(0);
   }
+
+  // @include media {
+
+  //   header {
+  //     background-color: $brand-color;
+  //     padding: 1rem;
+  //     align-items: center;
+  //     @include flex-layout;
+  //   }
+
+  //   .hamburger{
+  //     display: none;
+  //   }
+    
+  //   .menu {
+  //     background-color: $brand-color;
+  //     display: flex;
+  //     flex-direction: row;
+  //   }
+
+  //   .menu a {
+  //     padding: 0 1rem;
+  //   }
+
+  //   .menuItem:hover {
+  //     text-decoration: underline;
+  //   }
+
+  //   .menuItem {
+  //     text-decoration: none;
+  //   }
+
+  //   .showMenu {
+  //     display: none;
+  //   }
+  // }

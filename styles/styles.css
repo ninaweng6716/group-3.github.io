@@ -446,9 +446,6 @@ header img {
   transform: translateY(0);
 }
 
-nav {
-  background-color: #D1F0B1;
-}
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;
