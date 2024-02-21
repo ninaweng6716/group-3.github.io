@@ -1,0 +1,50 @@
+@use 'vars' as*;
+@use 'mixin' as*;
+
+.main-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.banner h1, .banner h2 {
+    position: absolute;
+}
+
+.banner h1 {
+    left: 5rem;
+    top: 3rem;
+}
+
+.banner-h2 {
+    right: 20rem;
+    top: 5rem;
+}
+
+.banner-h2-h2 {
+    right: 18rem;
+    top: 15rem;
+}
+
+.h1-animate {
+    right: 16rem;
+    top: 25rem;
+}
+
+@include media {
+    .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
+        @include display-grid;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    table, video, .table {
+        grid-column: span 2;
+    }
+}
