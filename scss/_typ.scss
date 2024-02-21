@@ -2,8 +2,16 @@
 
 body, a {
     font-family: $body-font;
-}
+};
 
 h1, h2, h3, h4, h5, h6, nav a, table {
     font-family: $heading-font;
+};
+
+main {
+    line-height: 2;
+};
+
+ul, ol {
+    padding-left: 2rem;
 }

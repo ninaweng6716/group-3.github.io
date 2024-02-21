@@ -6,6 +6,14 @@ h1, h2, h3, h4, h5, h6, nav a, table {
   font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
 }
 
+main {
+  line-height: 2;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -379,25 +387,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #BED2D5;
 }
 
-.main-content {
-  width: 60%;
-  margin: 0 auto;
-}
-
 .banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  left: 0;
-  right: 0;
-  width: 100vw;
-}
-
-.banner h1, .banner h2 {
-  position: absolute;
+  z-index: 2;
 }
 
 .banner h1 {
-  left: 5rem;
-  top: 3rem;
+  position: absolute;
+  text-align: center;
 }
 
 .banner-h2 {
@@ -434,6 +436,8 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
 }
 
 header img {
@@ -496,6 +500,15 @@ header img {
 nav {
   background-color: #D1F0B1;
 }
+.main-content {
+  margin: 1rem;
+}
+
+@media (min-width: 50rem) {
+  .main-content {
+    margin-left: 17rem;
+  }
+}
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;
@@ -519,15 +532,14 @@ td {
     width: 250px;
     background-color: #BED2D5;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    left: 0;
     height: 100%;
     overflow-y: auto;
+    z-index: 1;
   }
   #sidebar h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    display: none;
   }
   #sidebar ul {
     list-style: none;
@@ -659,6 +671,16 @@ td {
 
 .transitions-cubic-bezier:hover {
   opacity: 1;
+}
+
+footer {
+  background-color: #353A47;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */

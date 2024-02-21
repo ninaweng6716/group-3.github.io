@@ -1,0 +1,12 @@
+@use 'vars' as *;
+@use 'mixin' as *;
+
+footer {
+    background-color: #353A47;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}

@@ -6,8 +6,9 @@ header {
     padding: 0 1rem 0 1rem;
     align-items: center;
     @include flex-layout;
+    position: relative;
+    z-index: 3;
 }
-
 
 header img {
     height: 6.25rem;

@@ -2,24 +2,32 @@
 @use 'mixin' as*;
 
 .main-content {
-    width: 60%;
-    margin: 0 auto;
+    // width: 60%;
+    // margin: 0 auto;
 }
 
 .banner {
+    // position: relative;
+    // left: 0;
+    // right: 0;
+    // width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 0;
-    right: 0;
-    width: 100vw;
-}
-
-.banner h1, .banner h2 {
-    position: absolute;
+    z-index: 2;
 }
 
 .banner h1 {
-    left: 5rem;
-    top: 3rem;
+    position: absolute;
+    text-align: center;
+}
+
+.banner h1 {
+    // left: 5rem;
+    // top: 3rem;
 }
 
 .banner-h2 {
