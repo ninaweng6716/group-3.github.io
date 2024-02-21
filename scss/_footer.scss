@@ -1,0 +1,7 @@
+@use 'vars' as *;
+
+footer {
+    background-color: $brand-color;
+    color: $body-bg-color;
+    padding: 1rem;
+}

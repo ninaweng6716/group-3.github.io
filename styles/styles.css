@@ -427,6 +427,12 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: span 2;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #D1F0B1;
   padding: 1rem;
@@ -442,12 +448,6 @@ header .closeIcon {
 header img {
   height: 6.25rem;
   width: auto;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .menuItem {
@@ -655,6 +655,12 @@ td {
 
 .transitions-cubic-bezier:hover {
   opacity: 1;
+}
+
+footer {
+  background-color: #D1F0B1;
+  color: #353A47;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
