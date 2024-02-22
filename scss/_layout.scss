@@ -39,7 +39,7 @@
 @include media {
     .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
         @include display-grid;
-        gap: 1rem;
+        gap: 2rem;
         margin-bottom: 1rem;
     }
 

@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
   }
   table, video, .table {
@@ -616,7 +616,7 @@ td {
 }
 .animate-h2 {
   animation-name: bounce;
-  animation-iteration-count: 1s;
+  animation-iteration-count: 2s;
   animation-duration: infinite;
 }
 
@@ -628,6 +628,7 @@ td {
   animation-name: fadeInOut, moveLeft300px, bounce;
   animation-duration: 2.5s, 5s, 1s;
   animation-iteration-count: 2, 1, 5;
+  margin: 2.5rem 0;
 }
 
 @keyframes fadeInOut {
