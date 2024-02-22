@@ -71,36 +71,44 @@ header img {
 }
 
 
-// @include media {
-
-//   header {
-//     background-color: $brand-color;
-//     padding: 1rem;
-//     align-items: center;
-//     @include flex-layout;
-//   }
-
-//   .hamburger{
-//     display: none;
-//   }
+@include media {
   
-//   .menu {
-//     background-color: $brand-color;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//   }
+  header {
+    background-color: $brand-color;
+    padding: 1rem;
+    align-items: center;
+    @include flex-layout;
+  }
 
-//   .menu a {
-//     padding: 0 1rem;
-//   }
+  .hamburger{
+    display: none;
+  }
+  
+  .menu {
+    background-color: $brand-color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: static;
+    transform:unset;
+    padding-top: 0;
+  }
 
-//   .menuItem:hover {
-//     text-decoration: underline;
-//   }
+  .menu a {
+    padding: 0 1rem;
+  }
 
-//   .menuItem {
-//     text-decoration: none;
-//   }
+  .menuItem:hover {
+    text-decoration: underline;
+  }
 
-// }
+  .menuItem {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    color: $body-bg-color;
+    text-decoration: none;
+  }
+
+}

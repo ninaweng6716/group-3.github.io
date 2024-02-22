@@ -494,6 +494,42 @@ header img {
   transform: translateY(0);
 }
 
+@media (min-width: 50rem) {
+  header {
+    background-color: #D1F0B1;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    background-color: #D1F0B1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: static;
+    transform: unset;
+    padding-top: 0;
+  }
+  .menu a {
+    padding: 0 1rem;
+  }
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  .menuItem {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    color: #353A47;
+    text-decoration: none;
+  }
+}
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;
