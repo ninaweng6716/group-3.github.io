@@ -387,6 +387,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #BED2D5;
 }
 
+.main-content {
+  width: 70%;
+  margin: 1rem auto;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -500,15 +505,6 @@ header img {
 nav {
   background-color: #D1F0B1;
 }
-.main-content {
-  margin: 1rem;
-}
-
-@media (min-width: 50rem) {
-  .main-content {
-    margin-left: 17rem;
-  }
-}
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;
@@ -529,10 +525,8 @@ td {
 @media (min-width: 50rem) {
   #sidebar {
     display: block;
-    width: 250px;
+    width: 20%;
     background-color: #BED2D5;
-    padding: 20px;
-    position: fixed;
     top: 0;
     height: 100%;
     overflow-y: auto;
@@ -561,15 +555,16 @@ td {
   #sidebar ul li a:hover {
     background-color: #D1F0B1;
   }
+  .sidebar-main-content-wrapper {
+    display: flex;
+  }
 }
 .h1-animate {
+  display: block;
   animation-name: rotate-circle;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
 }
 
 @keyframes rotate-circle {
@@ -638,11 +633,9 @@ td {
 @keyframes slideIn {
   from {
     margin-left: 50%;
-    width: 150%;
   }
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }
 .transitions-intro picture img {

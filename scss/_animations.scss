@@ -1,13 +1,11 @@
 @use 'vars' as*;
 
 .h1-animate {
+    display: block;
     animation-name: rotate-circle;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
-    width: 6rem;
-    height: 6rem;
-    margin: 0 auto;
 }
 
 @keyframes rotate-circle {
@@ -80,10 +78,8 @@
 @keyframes slideIn {
     from {
         margin-left: 50%;
-        width: 150%;
     }
     to {
         margin-left: 0%;
-        width: 100%;
     }
 }

@@ -9,10 +9,10 @@
 
   #sidebar {
     display: block;
-    width: 250px;
+    width: 20%;
     background-color: #BED2D5;
-    padding: 20px;
-    position: fixed;
+    // padding: 20px;
+    // position: sticky;
     top: 0;
     height: 100%;
     overflow-y: auto;
@@ -42,5 +42,9 @@
   }
   #sidebar ul li a:hover {
     background-color: $brand-color;
+  }
+
+  .sidebar-main-content-wrapper {
+    display: flex;
   }
 }
