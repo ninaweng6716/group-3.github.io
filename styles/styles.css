@@ -527,10 +527,13 @@ td {
     display: block;
     width: 20%;
     background-color: #BED2D5;
+    padding: 20px;
+    position: sticky;
     top: 0;
-    height: 100%;
-    overflow-y: auto;
+    height: 100vh;
+    overflow-y: scroll;
     z-index: 1;
+    margin-right: 20px;
   }
   #sidebar h2 {
     display: none;
@@ -539,6 +542,9 @@ td {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  #sidebar ul li {
+    margin-bottom: 5px;
   }
   #sidebar ul li {
     margin-bottom: 5px;
