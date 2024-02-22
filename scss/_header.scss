@@ -61,8 +61,14 @@ header img {
     color: white;
     list-style: none;
     padding-top: 4rem;
+    padding-left: 0;
   }
   
   .showMenu {
     transform: translateY(0);
+  }
+
+  .showMenu li {
+    text-align: right;
+    padding: 0.5rem;
   }

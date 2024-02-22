@@ -4,9 +4,18 @@ body, a {
     font-family: $body-font;
 };
 
-h1, h2, h3, h4, h5, h6, nav a, table {
+h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
+    text-transform: uppercase;
 };
+
+nav a, table {
+    font-family: $heading-font;
+}
+
+table {
+    margin: 1rem 0;
+}
 
 main {
     line-height: 2;
@@ -14,4 +23,22 @@ main {
 
 ul, ol {
     padding-left: 2rem;
+}
+
+
+a, a:active {
+    color: $brand-color;
+}
+
+a:focus {
+    outline: $brand-color solid 2px;
+}
+
+main h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+main h3, main h4 {
+    padding: 0 0 1rem;
 }

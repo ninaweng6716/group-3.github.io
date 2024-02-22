@@ -1,4 +1,8 @@
 @use 'vars' as *;
+// smooth scrolling
+html {
+    scroll-behavior: smooth;
+}
 
 // Background color
 body {

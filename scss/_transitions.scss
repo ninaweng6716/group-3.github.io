@@ -1,22 +1,44 @@
 @use 'vars' as *;
 
-.transitions-intro picture img {
-    width: 50rem;
-    transition: width 1s ease-in;
+.transitions-h2 {
+    transition: all 0.3s ease-in;
 }
 
-.transitions-intro picture img:hover {
-    width: 80rem;
+.transitions-h2:hover {
+    background-color: $brand-color;
+    border: 18px outset #292929;
+    border-radius: 10px;
+    color: $body-bg-color;
+    margin-bottom: 1rem;
+}
+
+.transitions-graphic {
+    width: 50rem;
+    transition: transform 1s ease-out;
+}
+
+.transitions-graphic:hover {
+    transform: rotate(360deg) translate(0px, 0px);
 }
 
 .transitions-sub-properties ul li a {
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.5s linear;
 }
 
 .transitions-sub-properties ul li a:hover {
     background-color: $brand-color;
     color: $body-bg-color;
+}
+
+.transitions-step-values h4 {
+    position: relative; /* Make sure the element has a position to animate */
+    animation: step 3s steps(5, jump-none) infinite; /* Added "infinite" to make it loop */
+}
+
+@keyframes step {
+    0% { left: 0px; top: 0px; }
+    100% { left: 350px; top: 0px; }
 }
 
 .transitions-cubic-bezier {
