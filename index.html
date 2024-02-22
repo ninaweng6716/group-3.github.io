@@ -65,7 +65,7 @@
                     </ul>
                     
                     <ul>
-                        <li><a href="transitions"><strong>Transitions</strong></a></li>
+                        <li><a href="#transitions"><strong>Transitions</strong></a></li>
                         <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
                         <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
                         <li><a href="#transitions-syntax-h3">Syntax</a></li>
@@ -73,9 +73,9 @@
                         <li><a href="#transitions-js-h3">Using JavaScript in CSS Transitions</a></li>
                         <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
                         <li><a href="#transitions-timing-glossary-h3">Transition-Timing-Function Glossary</a></li>
-                        <li><a href="#transitions-key-values">Key Values</a></li>
+                        <!-- <li><a href="#transitions-key-values">Key Values</a></li> -->
                         <li><a href="#transitions-step-values">Step Values and Jump Values</a></li>
-                        <li><a href="#step-end-start">Step-End and Step-Start</a></li>
+                        <!-- <li><a href="#step-end-start">Step-End and Step-Start</a></li> -->
                         <li><a href="#transitions-cubic-bezier">Cubic-Bezier</a></li>
                     </ul>
                     
@@ -84,12 +84,12 @@
                         <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
                         <li><a href="#transforms-properties-h3">Transform Properties</a></li>
                         <li><a href="#transforms-2D">2D CSS Transformations</a></li>
-                        <li><a href="#translate-h4">Translate()</a></li>
+                        <!-- <li><a href="#translate-h4">Translate()</a></li>
                         <li><a href="#rotate-h4">Rotate()</a></li>
                         <li><a href="#scale-h4">Scale()</a></li>
-                        <li><a href="#skew-h4">Skew()</a></li>
+                        <li><a href="#skew-h4">Skew()</a></li> -->
                         <li><a href="#transforms-3D">3D CSS Transformations</a></li>
-                        <li><a href=" #transform-origin-h3">Transform Origin</a></li>
+                        <!-- <li><a href=" #transform-origin-h3">Transform Origin</a></li> -->
                     </ul>
                     
                     <ul>
@@ -482,7 +482,7 @@
             <section class="animations" id="animations">
                 <h2 class="animate-h2">Animations</h2>
                 <div class="animations-grid">
-                    <article>
+                    <article class="colspan-2">
                         <h3>Why use animations instead of JavaScript?</h3>
                         <p>There are three advantages to using CSS animations over JavaScript.</p>
                         <ol>
@@ -492,7 +492,7 @@
                         </ol>
                         <p>This runs well under a moderate system load because it reduces the update frequency of animations running in non-visible tabs.</p>
                     </article>
-                    <article>
+                    <article class="colspan-2">
                         <h3 id="animation-begin">How to begin</h3>
                         <p>To create an animation sequence, first you can style the specific element with the animation property. Second, in most cases you'll have to add an @keyframe rule. To learn more about @keyframes, click <a href="#keyframes">here</a>.</p>
                     </article>
@@ -547,13 +547,16 @@
     
                     <h3 id="composite">Composite Operation</h3>
                     <p>The value of a property in a CSS rule is the underlying value, and the value of that same property in a keyframe is its effect value. What Composite Operation does is combine an effect value with an underlying value.</p>
-                    <p>There are three types of operations:</p>
+                    </article>
+                    <div class="gap">
+
+                        <p>There are three types of operations:</p>
                         <ol>
                             <li>Replace, which replaces the underlying value.</li>
                             <li>Add, which adds to the underlying value.</li>
                             <li>Accumulate, which combines with the underlying value.</li>
                         </ol>
-                    </article>
+                    </div>
                     <article>
     
                     <h3 id="animation-syntax">Syntax</h3>
@@ -562,9 +565,11 @@
                         <br>animation-duration: 3s;
                         <br>animation-name: slidein;
                         <br>animation-iteration-count: infinite;
-                        <br>animation-direction: alternate; <br>}</code><br>can be shortened into <br><code>p { <br>animation: 3s infinite alternate slidein; <br>}</code></p>
-                        <p>By using "infinite" as the iteration count, your animation repeats.</p>
+                        <br>animation-direction: alternate; <br>}</code></p>
                     </article>
+                    <div class="gap"><p></p>Can be shortened into <br><code>p { <br>animation: 3s infinite alternate slidein; <br>}</code></p>
+                        <p>By using "infinite" as the iteration count, your animation repeats.</p>
+                    </div>
                     <article>
                         <h3 id="multiple-animation-values">Setting multiple animation property values</h3>
                         <p>CSS animation longhand properties can accept multiple values, separated by commas. This can be used when you want to apply multiple animations to one rule and set different durations, iterations, and more.</p>
@@ -578,13 +583,13 @@
                         <p><code>animation-name: fadeInOut, moveLeft300px, bounce; <br>animation-duration: 2.5s, 5s, 1s; <br>animation-iteration-count: 2, 1, 5;</code></p>
                     </div>
     
-                    <article>
+                    <article class="colspan-2">
                     <h3 id="using-js-enhancing-animations">Using Animation Events</h3>
                     <p>While not in the scope of this project, it's necessary to understand when to use JavaScript to enhance your animations. You can gain more control over your animations by making use of event listeners. It can be used to detect when animations start, finish, and begin a new iteration.</p>
                     <p>You also must use JavaScript to make display and content-visibility work properly, because with CSS alone, it will show as visibile the whole way through the animation.</p>
                     <p>JavaScript can also be used to get an animation to replay after the stopping point. Your users may want to see it again, and you may not want to use infinite iterations.</p>
                     </article>    
-                    <article>
+                    <article class="colspan-2">
                     <h3 id="stopping-animation">Stopping an animation</h3>
                     <p>Removing the animation-name applied to an element will make it jump or cut to its next state. If you want the animation to come to a complete stop, or enable your users to stop animations on their own, you have to try a different approach.</p>
                     <p>There are two main tricks to this. First, make your animation as self-contained as possile. This means explicity writing a keyframe animation that goes through the full animation in one forward repitition. Second, use JavaScript to clear the animation being used when he iteration event fires.</p>

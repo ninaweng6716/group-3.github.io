@@ -21,25 +21,18 @@
     text-align: center;
 }
 
-.banner-h2 {
-    right: 20rem;
-    top: 5rem;
+.gap {
+    padding: 3rem 0;
 }
 
-.banner-h2-h2 {
-    right: 18rem;
-    top: 15rem;
-}
-
-.h1-animate {
-    right: 16rem;
-    top: 25rem;
+.colspan-2 {
+    grid-column: span 2;
 }
 
 @include media {
     .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
         @include display-grid;
-        gap: 2rem;
+        gap: 1rem;
         margin-bottom: 1rem;
     }
 

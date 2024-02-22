@@ -437,19 +437,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.banner-h2 {
-  right: 20rem;
-  top: 5rem;
+.gap {
+  padding: 3rem 0;
 }
 
-.banner-h2-h2 {
-  right: 18rem;
-  top: 15rem;
-}
-
-.h1-animate {
-  right: 16rem;
-  top: 25rem;
+.colspan-2 {
+  grid-column: span 2;
 }
 
 @media (min-width: 50rem) {
@@ -457,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 1rem;
   }
   table, video, .table {
@@ -616,8 +609,8 @@ td {
 }
 .animate-h2 {
   animation-name: bounce;
-  animation-iteration-count: 2s;
-  animation-duration: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .box-animation {
