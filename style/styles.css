@@ -443,9 +443,6 @@ header {
 }
 header .closeIcon {
   display: none;
-nav ul {
-  list-style: none;
-  display: flex;
 }
 
 header img {
