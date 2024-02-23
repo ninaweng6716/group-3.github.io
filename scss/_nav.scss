@@ -1,18 +1,39 @@
 @use 'vars' as *;
+@use 'mixin' as *;
 
-nav {
-    background-color: $brand-color;
-    // display: none;
+// @include media{
 
+//     .hamburger {
+//         display: none;
+//     }
+
+
+//     nav {
+//         background-color: $brand-color;
+//         display: block;
+    
+//         ul {
+//             list-style: none;
+//             display: flex;
+//             flex-direction: row;
+//         }
+    
+//         a {
+//             color: $text-color-dark;
+//             text-decoration: none;
+//             padding: 0 1rem;
+//         }
+//     }
+// }
     ul {
-        // list-style: none;
-        // display: flex;
-        // flex-direction: row;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
     }
 
     a {
-        // color: $text-color-dark;
-        // text-decoration: none;
-        // padding: 0 1rem;
+        color: $text-color-dark;
+        text-decoration: none;
+        padding: 0 1rem;
     }
-}
+
