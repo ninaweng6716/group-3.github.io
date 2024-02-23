@@ -530,6 +530,18 @@ header img {
     text-decoration: none;
   }
 }
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #353A47;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
 table, td {
   border: 1px solid #BED2D5;
   border-collapse: collapse;
