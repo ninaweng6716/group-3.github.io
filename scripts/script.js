@@ -24,10 +24,18 @@ menuItems.forEach(
   }
 )
 
-
-
-
+// Lightmode function
 function lightMode() {
   var element = document.body;
   element.classList.toggle("light-mode");
 }
+
+// Animation Begins when User scrolls to content
+document.addEventListener('scroll', function(e) {
+  var top = window.pageYOffset + window.innerHeight,
+      isVisible = top > document.querySelector('#box-animation').offsetTop;
+    
+  if (isVisible) {
+    document.getElementById('box-animation').classList.add('animate');
+  }
+})
