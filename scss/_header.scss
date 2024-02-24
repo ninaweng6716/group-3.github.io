@@ -23,7 +23,6 @@ header {
 header img {
     height: 6.25rem;
     width: auto;
-    
 }
 
 .menuItem {
@@ -112,4 +111,18 @@ header img {
     text-decoration: none;
   }
 
+}
+
+
+
+
+
+.light-mode {
+    background-color: $brand-color;
+    color: $body-bg-color;
+  
+
+  h2, h3, h4, h5, h6 {
+    color: $heading-color-dark;
+  }
 }

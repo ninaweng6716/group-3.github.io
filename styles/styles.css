@@ -560,6 +560,14 @@ header img {
     text-decoration: none;
   }
 }
+.light-mode {
+  background-color: #D1F0B1;
+  color: #353A47;
+}
+.light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+  color: #353A47;
+}
+
 ul {
   list-style: none;
   display: flex;
