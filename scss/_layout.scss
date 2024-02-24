@@ -24,6 +24,7 @@
 .banner h1 {
     position: absolute;
     text-align: center;
+    padding: 0 1rem;
 }
 
 .gap {
@@ -48,5 +49,9 @@
 
     table, video, .table {
         grid-column: span 2;
+    }
+
+    h1 {
+        font-size: 32px;
     }
 }

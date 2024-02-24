@@ -59,7 +59,7 @@
             <div id="sidebar">
                 <aside>
                     <h2>Table of Contents</h2>
-                    <ul>
+                    <!-- <ul>
                         <li><a href="#keyframes"><strong>Keyframes</strong></a></li>
                         <li><a href="#keyframe-example-one">Keyframe Example</a></li>
                         <li><a href="#keyframe-name">Keyframe Name</a></li>
@@ -72,14 +72,7 @@
                         <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
                         <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
                         <li><a href="#transitions-syntax-h3">Syntax</a></li>
-                        <li><a href="#transitions-nav-items-h3">Applying Transitions to Nav Items</a></li>
-                        <li><a href="#transitions-js-h3">Using JavaScript in CSS Transitions</a></li>
                         <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
-                        <li><a href="#transitions-timing-glossary-h3">Transition-Timing-Function Glossary</a></li>
-                        <!-- <li><a href="#transitions-key-values">Key Values</a></li> -->
-                        <li><a href="#transitions-step-values">Step Values and Jump Values</a></li>
-                        <!-- <li><a href="#step-end-start">Step-End and Step-Start</a></li> -->
-                        <li><a href="#transitions-cubic-bezier">Cubic-Bezier</a></li>
                     </ul>
                     
                     <ul>
@@ -87,15 +80,34 @@
                         <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
                         <li><a href="#transforms-properties-h3">Transform Properties</a></li>
                         <li><a href="#transforms-2D">2D CSS Transformations</a></li>
-                        <!-- <li><a href="#translate-h4">Translate()</a></li>
-                        <li><a href="#rotate-h4">Rotate()</a></li>
-                        <li><a href="#scale-h4">Scale()</a></li>
-                        <li><a href="#skew-h4">Skew()</a></li> -->
                         <li><a href="#transforms-3D">3D CSS Transformations</a></li>
-                        <!-- <li><a href=" #transform-origin-h3">Transform Origin</a></li> -->
                     </ul>
                     
                     <ul>
+                        <li><a href="#animations"><strong>Animations</strong></a></li>
+                        <li><a href="#animation-begin">How to begin</a></li>
+                        <li><a href="#composite">Composite Operation</a></li>
+                        <li><a href="#animation-syntax">Syntax</a></li>
+                        <li><a href="#multiple-animation-values">Multiple Values</a></li>
+                        <li><a href="#stopping-animation">Stopping Animations</a></li>
+                    </ul> -->
+
+                    <ul>
+                        <li><a href="#keyframes"><strong>Keyframes</strong></a></li>
+                        <li><a href="#keyframe-example-one">Keyframe Example</a></li>
+                        <li><a href="#keyframe-name">Keyframe Name</a></li>
+                        <li><a href="#keyframe-selector">Keyframe Selector</a></li>
+                        <li><a href="#keyframe-block">Keyframe Block</a></li>
+                        <li><a href="#transitions"><strong>Transitions</strong></a></li>
+                        <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
+                        <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
+                        <li><a href="#transitions-syntax-h3">Syntax</a></li>
+                        <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
+                        <li><a href="#transform"><strong>Transforms</strong></a></li>
+                        <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
+                        <li><a href="#transforms-properties-h3">Transform Properties</a></li>
+                        <li><a href="#transforms-2D">2D CSS Transformations</a></li>
+                        <li><a href="#transforms-3D">3D CSS Transformations</a></li>
                         <li><a href="#animations"><strong>Animations</strong></a></li>
                         <li><a href="#animation-begin">How to begin</a></li>
                         <li><a href="#composite">Composite Operation</a></li>
@@ -248,10 +260,12 @@
                                 You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
                             </p>
                         </article>        
-                
-                        <video controls width="500">
-                            <source src="media/content-visibility-example-transitions.mp4" type="video/mp4">
-                        </video>
+                        
+                        <div class="transitions-video">
+                            <video controls width="750">
+                                <source src="media/content-visibility-example-transitions.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     
                         <article class="table">
                             <div class="transitions-glossary">
@@ -414,18 +428,51 @@
                             <p>Two major properties are used to define CSS transforms:</p>
                         </article>
                         
-                        <table>
-                            <tr>
-                                <th>Transform</th>
-                                <th>Transform-origin</th>
-                            </tr>
-                            
-                            <tr>
-                                <td>transform: value(argument);<br>
-                                    Here, value is the type of transformation and argument is the extent to which the transformation is applied. Some transformation declarations can take multiple arguments.</td>
-                                    <td>The transform-origin property changes the position of the origin, the point where the transformation starts or is based around.</td>
+                        <div class="transform-table">
+                            <!-- <table>
+                                <tr>
+                                    <th>Transform</th>
+                                    <th>Transform-origin</th>
                                 </tr>
-                        </table>
+                                
+                                <tr>
+                                    <td>transform: value(argument);<br>
+                                        Here, value is the type of transformation and argument is the extent to which the transformation is applied. Some transformation declarations can take multiple arguments.</td>
+                                        <td>The transform-origin property changes the position of the origin, the point where the transformation starts or is based around.</td>
+                                </tr>
+                            </table> -->
+
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Transform Property</th>
+                                    <th scope="col">Definition</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <strong>transform</strong>
+                                    </td>
+                                    <td>
+                                      <p>
+                                        The <code>transform</code> property is used to apply a 2D or 3D transformation to an element. The value represents the type of transformation, and the argument specifies the extent to which the transformation is applied. Some transformation declarations can take multiple arguments.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <strong>transform-origin</strong>
+                                    </td>
+                                    <td>
+                                      <p>
+                                        The <code>transform-origin</code> property changes the position of the origin, which is the point where the transformation starts or is based around.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
                             
                         <article>
                             <h3 id="transforms-2D">2D CSS Transformations</h3>

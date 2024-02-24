@@ -31,13 +31,18 @@ a:focus {
   outline: #D1F0B1 solid 2px;
 }
 
+a:hover {
+  color: #353A47;
+  background-color: #D1F0B1;
+}
+
 main h2 {
   padding: 1rem;
   text-align: center;
 }
 
 main h3, main h4 {
-  padding: 0 0 1rem;
+  padding: 1rem 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -73,7 +78,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 18px;
   margin: 0.67em 0;
 }
 
@@ -440,6 +445,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner h1 {
   position: absolute;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .gap {
@@ -465,6 +471,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   table, video, .table {
     grid-column: span 2;
+  }
+  h1 {
+    font-size: 32px;
   }
 }
 * {
@@ -527,11 +536,15 @@ header img {
   background: black;
   color: white;
   list-style: none;
-  padding-top: 4rem;
+  padding: 4rem 0 0;
 }
 
 .showMenu {
   transform: translateY(0);
+}
+
+.showMenu li {
+  text-align: center;
 }
 
 @media (min-width: 50rem) {
@@ -587,14 +600,17 @@ ul {
   flex-direction: column;
 }
 
-a {
-  color: #353A47;
+header a {
   text-decoration: none;
   padding: 0 1rem;
 }
 
-table, td {
+table {
   border: 1px solid #BED2D5;
+}
+
+th, td {
+  border: 0.5px solid #BED2D5;
   border-collapse: collapse;
 }
 
@@ -604,6 +620,10 @@ thead {
 
 td {
   padding: 0.25rem;
+}
+
+.transform-table {
+  display: grid;
 }
 
 #sidebar {
@@ -757,7 +777,13 @@ td {
   transform: rotate(360deg) translate(0px, 0px);
 }
 
+.transitions-sub-properties ul {
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
 .transitions-sub-properties ul li a {
+  font-size: 1.25rem;
   text-decoration: none;
   transition: all 0.5s linear;
 }
@@ -765,6 +791,12 @@ td {
 .transitions-sub-properties ul li a:hover {
   background-color: #D1F0B1;
   color: #353A47;
+}
+
+.transitions-video {
+  display: grid;
+  margin: 1rem 0 0;
+  grid-column: span 2;
 }
 
 .transitions-step-values h4 {
