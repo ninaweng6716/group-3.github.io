@@ -28,7 +28,7 @@
 }
 
 .gap {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .colspan-2 {
@@ -40,7 +40,7 @@
         @include display-grid;
         gap: 1rem;
         margin-bottom: 1rem;
-        img {
+        img, picture {
             align-self: center;
             object-fit: cover;
             justify-self: center;

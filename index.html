@@ -123,7 +123,7 @@
                     <h2>Keyframes</h2>
                     <div class="keyframes-grid">
     
-                        <article>
+                        <article  class="colspan-2">
                             <h3>Keyframe Intro</h3>
                             <p>Keyframes are most important part of creating animations in css. Their job is define the steps in an animation sequence. This allows us to control how a set element changes its style over a set duration. The keyframes specify the behaviour of one cycle of the animation; the animation may iterate zero or more times.The way that key frames are defined are by using: `@keyframes` rule. Then the name we set set for the animation sequence.
                             </p>                      
@@ -155,9 +155,11 @@
                             <p>For example, the following two @keyframes rules have the same name, so the first will be ignored:
                                 <br>@keyframes foo { /* ... */ }
                                 <br>@keyframes "foo" { /* ... */ }
-    
+                        
                             <p>On the other hand, the following @keyframes rule's name is different from the previous two rules:
                                 <br>@keyframes FOO { /* ... */ }</p>
+                        </article>
+                        <div class="gap">
                             <p>The following @keyframes rules are invalid because they use disallowed values:
                                 <br>@keyframes initial { /* ... */ }
                                 <br>@keyframes None { /* ... */ }</p>
@@ -165,7 +167,7 @@
                                 <br>@keyframes "initial" { /* ... */ }
                                 <br>@keyframes "None" { /* ... */ }
                             </p>
-                        </article>
+                        </div>
                                                 
                         <article>
                             <h3>Keyframe Selector</h3>
@@ -243,10 +245,10 @@
                             </div>
                         </article>
                     
-                        <article>
-                            <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
-    
-                            <div class="transitions-js">
+                        <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
+                        
+                        <article class="colspan-2">
+                            <div>
                                 <h4>Makes JavaScript Functionality Smoother</h4>
                                 <p>
                                     You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
@@ -254,7 +256,7 @@
                             </div>
                         </article>
                     
-                        <article>
+                        <article class="colspan-2">
                             <h4>Transitions on Display and Content-Visibility</h4>
                             <p>
                                 You can use CSS Transitions to transition display and content-visibility properties. You will need some JavaScript to set up event listeners that will trigger the transition, and not all browsers support this. For example, you can first use JavaScript to make event listeners that will trigger a hidden element. From there, you can go into your CSS to make the transition of the element from 'hidden' to 'shown' smoother using the transition property. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility">See this example by MDN</a>.
@@ -357,7 +359,7 @@
                         </div>
                         </article> 
                     
-                        <article class="table">
+                        <article class="colspan-2">
                             <div class="transitions-step-values" id="transitions-step-values">
                                 <h4>Step Values and Jump Values</h4>
                                 <p>
@@ -391,7 +393,7 @@
                             </table>
                         </div>
                         </article>
-                        <article>
+                        <article class="colspan-2">
                             <div id="step-end-start" class="step-end-start">
                                 <h4>Step-End and Step-Start</h4>
                                 <p>
@@ -400,7 +402,7 @@
                             </div>
                         </article>    
                         
-                        <article>
+                        <article class="colspan-2">
                             <div id="transitions-cubic-bezier" class="transitions-cubic-bezier">
                                 <h4>Cubic-Bezier</h4>
                                 <p>
@@ -424,9 +426,10 @@
                                 <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to  rotate, scale, translate(move), and, skew elements.
                                 </p>
                             </div>
+                        </article>
+                        <article class="colspan-2">
                             <h3 id="transforms-properties-h3">Transform Properties</h3>
                             <p>Two major properties are used to define CSS transforms:</p>
-                        </article>
                         
                         <div class="transform-table">
                             <!-- <table>
@@ -473,7 +476,7 @@
                                 </tbody>
                               </table>
                         </div>
-                            
+                        </article>    
                         <article>
                             <h3 id="transforms-2D">2D CSS Transformations</h3>
                                 
@@ -506,14 +509,15 @@
                             
                         <img src="images/transform-skew.jpg" alt="example of transform skew() method">
                             
-                        <article>
+                        <article class="colspan-2">
                             <h3 id="transforms-3D">3D CSS Transformations</h3>
                             <p>Three-dimensional CSS transformations utilize the Z-axis of the page. If you imagine the width and height of your screen as the X and Y-axes respectively, the Z-axis is the “depth” of your screen. A greater Z value makes the element appear "closer" to you.</p> 
                         </article>
-                        <article>
+                        <article class="colspan-2">
                             <h4 id="perspective-h4">Perspective()</h4>
                             <p>The perspective() value sets the depth of the element on the Z-axis. It toggles how “close” or “far away” the element appears. perspective() is used in conjunction with other 3D transformation methods.</p>
                         </article>
+                        
                         <article>       
                             <h4>Transform: rotateX() and rotateY()</h4>
                             <p>Like rotate(), the rotateX() and rotateY() values rotate our div, but “around” the X and Y-axes. When these methods are used with perspective(), the rotated element appears to rotate toward us, as you can see in the example: <br> <code>transform: perspective(500px) translate(50px) rotate(70deg);</code></p>

@@ -449,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gap {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .colspan-2 {
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     margin-bottom: 1rem;
   }
-  .keyframes-grid img, .transitions-grid img, .transforms-grid img, .animations-grid img {
+  .keyframes-grid img, .keyframes-grid picture, .transitions-grid img, .transitions-grid picture, .transforms-grid img, .transforms-grid picture, .animations-grid img, .animations-grid picture {
     align-self: center;
     object-fit: cover;
     justify-self: center;
