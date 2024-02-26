@@ -123,7 +123,7 @@ header img {
   width: 60px;
   height: 30px;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: $body-bg-color;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -136,7 +136,7 @@ header img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $brand-color;
   top: 50%;
   transform: translateY(-50%);
   left: 4px;
@@ -152,13 +152,13 @@ header img {
   font-size: 18px;
 }
 
-/* Dark Mode */
+// Light Mode 
 #toggle:checked {
-  background-color: #333;
+  background-color: $body-bg-color;
 }
 
 #toggle:checked + .label {
-  color: #fff;
+  color: $body-bg-color;
 }
 
 
