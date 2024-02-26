@@ -1,0 +1,15 @@
+@use 'vars' as *;
+// smooth scrolling
+html {
+    scroll-behavior: smooth;
+}
+
+// Background color
+body {
+    background-color: $body-bg-color;
+    color: $brand-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color-light;
+}

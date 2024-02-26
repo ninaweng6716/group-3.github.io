@@ -1,0 +1,20 @@
+@use 'vars' as *;
+
+//base styles
+@use 'typ';
+@use 'normalize';
+@use 'body';
+@use 'layout';
+
+//header styles
+@use 'header';
+@use 'nav';
+
+//main styles
+@use 'table';
+@use 'sidebar';
+@use 'animations';
+@use 'transitions';
+
+//footer styles
+@use 'footer';

@@ -1,0 +1,55 @@
+@use 'vars' as*;
+@use 'mixin' as*;
+
+#sidebar {
+  display: none;
+}
+
+@include media {
+
+  #sidebar {
+    display: block;
+    width: 20%;
+    background-color: #BED2D5;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 1;
+  }
+  #sidebar h2 {
+    // font-size: 18px;
+    // margin-bottom: 10px;
+    display: none;
+  }
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & li {
+      margin-bottom: 5px;
+    }
+  }
+  #sidebar ul li {
+    margin-bottom: 5px;
+  }
+  #sidebar ul li a {
+    text-decoration: double;
+    color: $text-color-dark;
+    font-size: 1rem;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  #sidebar ul li a:hover {
+    background-color: $brand-color;
+  }
+
+  .sidebar-main-content-wrapper {
+    display: flex;
+    
+  }
+}

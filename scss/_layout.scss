@@ -1,0 +1,57 @@
+@use 'vars' as*;
+@use 'mixin' as*;
+
+.main-content {
+    width: 70%;
+    margin: 2rem auto;
+    a {
+        color: $brand-color;
+        padding: 0;
+        text-decoration: underline;
+    }
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    position: absolute;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.gap {
+    padding: 4rem 0;
+}
+
+.colspan-2 {
+    grid-column: span 2;
+}
+
+@include media {
+    .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
+        @include display-grid;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        img, picture {
+            align-self: center;
+            object-fit: cover;
+            justify-self: center;
+        }
+    }
+
+    table, video, .table {
+        grid-column: span 2;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

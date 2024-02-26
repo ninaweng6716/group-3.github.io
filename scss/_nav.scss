@@ -1,0 +1,38 @@
+@use 'vars' as *;
+@use 'mixin' as *;
+
+// @include media{
+
+//     .hamburger {
+//         display: none;
+//     }
+
+
+//     nav {
+//         background-color: $brand-color;
+//         display: block;
+    
+//         ul {
+//             list-style: none;
+//             display: flex;
+//             flex-direction: row;
+//         }
+    
+//         a {
+//             color: $text-color-dark;
+//             text-decoration: none;
+//             padding: 0 1rem;
+//         }
+//     }
+// }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header a {
+        text-decoration: none;
+        padding: 0 1rem;
+    }
+

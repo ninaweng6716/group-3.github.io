@@ -1,0 +1,22 @@
+@use 'vars' as *;
+
+table {
+    border: 1px solid $heading-color-light;
+}
+
+th, td {
+    border: 0.5px solid $heading-color-light;
+    border-collapse: collapse;
+}
+
+thead {
+    color: $heading-color-light;
+}
+
+td {
+    padding: .25rem;
+}
+
+.transform-table {
+    display: grid;
+}
