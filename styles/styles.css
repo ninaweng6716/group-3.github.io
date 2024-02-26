@@ -583,10 +583,15 @@ header img {
     text-decoration: none;
   }
 }
+.toggle-container {
+  display: inline-flex;
+  align-items: end;
+}
+
 #toggle {
   appearance: none;
   width: 60px;
-  height: 30px;
+  height: 25px;
   border-radius: 15px;
   background-color: #353A47;
   outline: none;
@@ -598,8 +603,8 @@ header img {
 #toggle:before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #D1F0B1;
   top: 50%;
@@ -614,7 +619,7 @@ header img {
 
 .label {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #toggle:checked {
@@ -623,6 +628,7 @@ header img {
 
 #toggle:checked + .label {
   color: #353A47;
+  margin-top: 4px;
 }
 
 .light-mode {
