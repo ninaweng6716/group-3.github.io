@@ -29,7 +29,8 @@
         <!-- logo -->
         <img src="images/sfc-logo.svg" width="100px" alt="Light orange cat sitting on a keyboard.">
         <div>
-            <button onclick="lightMode()">Switchmode</button>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="label" onclick="lightMode()">Switchmode</label>
         </div>
         <nav>
             <ul class="menu">
@@ -114,6 +115,7 @@
                         <li><a href="#animation-syntax">Syntax</a></li>
                         <li><a href="#multiple-animation-values">Multiple Values</a></li>
                         <li><a href="#stopping-animation">Stopping Animations</a></li>
+                        <li><a href="#about">About Us</a></li>
                     </ul>
                 </aside>
             </div>
@@ -651,7 +653,7 @@
                 </div>
                 </section>
                 
-                <section class="about">
+                <section class="about" id="about">
                    <h3>About Us</h3>
                    <p> This CSS Animations project was completed in collaboration from Catharina, Nina, Yasin and Zaif. </p>
                     

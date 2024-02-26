@@ -583,6 +583,49 @@ header img {
     text-decoration: none;
   }
 }
+#toggle {
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ccc;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.4s ease;
+}
+
+#toggle:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  transition: transform 0.4s ease;
+}
+
+#toggle:checked:before {
+  transform: translateX(30px) translateY(-50%);
+}
+
+.label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* Dark Mode */
+#toggle:checked {
+  background-color: #333;
+}
+
+#toggle:checked + .label {
+  color: #fff;
+}
+
 .light-mode {
   background-color: #D1F0B1;
   color: #353A47;
