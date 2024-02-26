@@ -678,6 +678,15 @@ td {
   display: none;
 }
 
+#sidebar-open ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 1rem;
+  gap: 0.5rem;
+}
+
 @media (min-width: 50rem) {
   #sidebar {
     display: block;
@@ -713,6 +722,9 @@ td {
     border-radius: 3px;
     transition: background-color 0.3s ease;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   #sidebar ul li a:hover {
     background-color: #D1F0B1;
@@ -847,21 +859,6 @@ td {
   grid-column: span 2;
 }
 
-.transitions-step-values h4 {
-  position: relative;
-  animation: step 3s steps(5, jump-none) infinite;
-}
-
-@keyframes step {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 350px;
-    top: 0px;
-  }
-}
 .transitions-cubic-bezier {
   opacity: 0.25;
   transition: opacity 2s cubic-bezier(0.11, 0, 0.5, 0) 0s;
@@ -871,6 +868,23 @@ td {
   opacity: 1;
 }
 
+@media (min-width: 50em) {
+  .transitions-step-values {
+    overflow: hidden;
+  }
+  .transitions-step-values h4 {
+    position: relative;
+    animation: step 3s steps(5, jump-none) infinite;
+  }
+  @keyframes step {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 40vw;
+    }
+  }
+}
 footer {
   background-color: #d1f0b1;
   color: #353A47;

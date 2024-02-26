@@ -121,6 +121,7 @@
             </div>
             
             <div class="main-content" id="main-content">
+                <button id="btn-sidebar">Toggle Sidebar</button>
                 <section class="keyframes" id="keyframes">
                     <h2>Keyframes</h2>
                     <div class="keyframes-grid">
@@ -365,7 +366,7 @@
                             <div class="transitions-step-values" id="transitions-step-values">
                                 <h4>Step Values and Jump Values</h4>
                                 <p>
-                                    The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
+                                    Ste values and their associated jump values behave very similarly to <a href="#animations">CSS Animations</a>. The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
                                 </p>
                             <table class="step-values-table">
                                 <thead>

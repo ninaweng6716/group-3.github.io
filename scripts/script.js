@@ -39,3 +39,22 @@ document.addEventListener('scroll', function(e) {
     document.getElementById('box-animation').classList.add('animate');
   }
 })
+
+// toggle sidebar content
+const btnSide = document.getElementById('btn-sidebar');
+const sidebar = document.getElementById('sidebar');
+
+btnSide.addEventListener('click', toggleSide);
+
+function toggleSide() {
+  if (sidebar.classList.contains("sidebar-open")) {
+    sidebar.classList.remove("sidebar-open");
+    sidebar.style.display = "none";
+    btnSide.style.display = "block";
+  } else {
+    sidebar.classList.add("sidebar-open");
+    sidebar.style.display = "block";  
+    btnSide.style.display = "none";
+  }
+}
+
