@@ -23,6 +23,7 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+const sidebar = document.getElementById('sidebar');
 
 // header disappears when user scrolls down and reappears when user scrolls up
 let prevScroll = window.scrollY;
@@ -33,8 +34,10 @@ window.onscroll = function() {
 
   if (prevScroll > currentScroll) {
     header.style.top = '0';
+    sidebar.style.paddingTop = '9rem'
   } else {
     header.style.top = '-200px';
+    sidebar.style.paddingTop = '0';
   }
 
   prevScroll = currentScroll;
@@ -66,8 +69,6 @@ document.addEventListener('scroll', function(e) {
 
 // toggle sidebar content
 const btnSide = document.getElementById('btn-sidebar');
-const sidebar = document.getElementById('sidebar');
-
 
 function toggleSide() {
   if (sidebar.classList.contains("sidebar-open")) {
