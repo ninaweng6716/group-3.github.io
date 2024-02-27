@@ -56,7 +56,7 @@ function lightMode() {
 
 // Animation Begins when User scrolls to content
 document.addEventListener('scroll', function(e) {
-  var top = window.pageYOffset + window.innerHeight,
+  var top = window.scrollY + window.innerHeight,
       isVisible = top > document.querySelector('#box-animation').offsetTop;
     
   if (isVisible) {
