@@ -30,6 +30,10 @@
     grid-column: span 2;
 }
 
+main {
+    margin-top: 8rem;
+}
+
 @include media {
     .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
         @include display-grid;

@@ -8,19 +8,36 @@
 }
 
 header {
-    background-color: $brand-color;
-    padding: 1rem;
-    align-items: center;
-    @include flex-layout;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: $brand-color;
+  padding: 1rem;
+  align-items: center;
+  transition: top 0.75s ease-out;
 
-    .closeIcon {
-      display: none;
-    }
+  @include flex-layout;
+
+  .closeIcon {
+    display: none;
+  }
 }
 
 header img {
     height: 6.25rem;
     width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.switch-nav-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .menuItem {
@@ -36,7 +53,7 @@ header img {
 }
 
 .hamburger {
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   top: 1rem;
   right: 1rem;
@@ -117,8 +134,12 @@ header img {
 // Mode Toggle
 
 .toggle-container{
-  display: inline-flex ;
-  align-items: end;
+  // display: inline-flex ;
+  // align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #toggle {
@@ -131,7 +152,6 @@ header img {
   cursor: pointer;
   position: relative;
   transition: background-color 0.4s ease;
-  
 }
 
 #toggle:before {
@@ -152,8 +172,8 @@ header img {
 }
 
 .label {
-  margin-left: 10px;
-  
+  // margin-left: 10px;
+  color: #353A47;
   font-size: 16px;
 }
 
@@ -163,11 +183,9 @@ header img {
 }
 
 #toggle:checked + .label {
-  color: $body-bg-color;
-  margin-top: 4px;
+  // color: $body-bg-color;
+  // margin-top: 4px;
 }
-
-
 
 .light-mode {
     background-color: $brand-color;

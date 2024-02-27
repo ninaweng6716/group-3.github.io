@@ -25,27 +25,32 @@
 
     <a href="#main-content" class ="screen-reader-text">Skip to Main Content</a>
 
-    <header>
-        <!-- logo -->
-        <img src="images/sfc-logo.svg" width="100px" alt="Light orange cat sitting on a keyboard.">
-        <div class="toggle-container">
-            <input type="checkbox" id="toggle" oninput="lightMode()" >
-            <label for="toggle" class="label">Light Mode</label>
+    <header id="header">
+
+        <div class="logo-wrapper">
+            <img src="images/sfc-logo.svg" width="100px" alt="Light orange cat sitting on a keyboard.">
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a class="menuItem" href="#transitions">Transitions</a></li>
-                <li><a class="menuItem" href="#transform">Transform</a></li>
-                <li><a class="menuItem" href="#animations">Animations</a></li>
-                <li><a class="menuItem" href="#keyframes">Keyframes</a></li>
-                <li><a class="menuItem" href="#about">About</a></li>
-            </ul>
-            <button class="hamburger">
-                <!-- material icons https://material.io/resources/icons/ -->
-                <i class="menuIcon material-icons">menu</i>
-                <i class="closeIcon material-icons">close</i>
-              </button>
-        </nav>
+
+        <div class="switch-nav-wrapper">
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle" oninput="lightMode()" >
+                <label id="switch-id" for="toggle" class="label">Light Mode</label>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menuItem" href="#transitions">Transitions</a></li>
+                    <li><a class="menuItem" href="#transform">Transform</a></li>
+                    <li><a class="menuItem" href="#animations">Animations</a></li>
+                    <li><a class="menuItem" href="#keyframes">Keyframes</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                </ul>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                    </button>
+            </nav>
+        </div>
 
     </header>
 

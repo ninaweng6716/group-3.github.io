@@ -24,10 +24,34 @@ menuItems.forEach(
   }
 )
 
+// header disappears when user scrolls down and reappears when user scrolls up
+let prevScroll = window.scrollY;
+
+window.onscroll = function() {
+  const currentScroll = window.scrollY;
+  const header = document.getElementById('header');
+
+  if (prevScroll > currentScroll) {
+    header.style.top = '0';
+  } else {
+    header.style.top = '-200px';
+  }
+
+  prevScroll = currentScroll;
+};
+
 // Lightmode function
+const labelElement = document.getElementById('switch-id');
+
 function lightMode() {
   var element = document.body;
-  element.classList.toggle("light-mode");
+
+  element.classList.toggle('light-mode');
+  if (labelElement.textContent === 'Light Mode') {
+    labelElement.textContent = 'Dark Mode';
+  } else {
+    labelElement.textContent = 'Light Mode';
+  }
 }
 
 // Animation Begins when User scrolls to content

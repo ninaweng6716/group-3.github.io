@@ -455,6 +455,10 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: span 2;
 }
 
+main {
+  margin-top: 8rem;
+}
+
 @media (min-width: 50rem) {
   .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
     display: grid;
@@ -482,9 +486,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
   background-color: #D1F0B1;
   padding: 1rem;
   align-items: center;
+  transition: top 0.75s ease-out;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -496,6 +506,16 @@ header .closeIcon {
 header img {
   height: 6.25rem;
   width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.switch-nav-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .menuItem {
@@ -511,7 +531,6 @@ header img {
 }
 
 .hamburger {
-  position: fixed;
   z-index: 100;
   top: 1rem;
   right: 1rem;
@@ -583,8 +602,10 @@ header img {
   }
 }
 .toggle-container {
-  display: inline-flex;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #toggle {
@@ -617,17 +638,12 @@ header img {
 }
 
 .label {
-  margin-left: 10px;
+  color: #353A47;
   font-size: 16px;
 }
 
 #toggle:checked {
   background-color: #353A47;
-}
-
-#toggle:checked + .label {
-  color: #353A47;
-  margin-top: 4px;
 }
 
 .light-mode {
