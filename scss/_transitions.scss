@@ -24,18 +24,11 @@
 
 .transitions-sub-properties ul {
     padding-left: 0;
-    margin: 1rem 0;
 }
 
 .transitions-sub-properties ul li a {
     font-size: 1.25rem;
-    text-decoration: none;
     transition: all 0.5s linear;
-}
-
-.transitions-sub-properties ul li a:hover {
-    background-color: $brand-color;
-    color: $body-bg-color;
 }
 
 .transitions-video {

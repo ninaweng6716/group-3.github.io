@@ -44,7 +44,6 @@ document.addEventListener('scroll', function(e) {
 const btnSide = document.getElementById('btn-sidebar');
 const sidebar = document.getElementById('sidebar');
 
-btnSide.addEventListener('click', toggleSide);
 
 function toggleSide() {
   if (sidebar.classList.contains("sidebar-open")) {
@@ -54,7 +53,7 @@ function toggleSide() {
   } else {
     sidebar.classList.add("sidebar-open");
     sidebar.style.display = "block";  
-    btnSide.style.display = "none";
   }
 }
 
+btnSide.addEventListener('click', toggleSide);
