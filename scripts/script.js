@@ -31,17 +31,22 @@ let prevScroll = window.scrollY;
 window.onscroll = function() {
   const currentScroll = window.scrollY;
   const header = document.getElementById('header');
+  const sidebar = document.getElementById('sidebar');
 
   if (prevScroll > currentScroll) {
     header.style.top = '0';
-    sidebar.style.paddingTop = '9rem'
-  } else {
+    sidebar.style.paddingTop = '9rem';
+  } else if (prevScroll < currentScroll) {
     header.style.top = '-200px';
+    sidebar.style.paddingTop = '0';
+  } else if (window.scrollY <= window.innerHeight) {
+    header.style.top = '0';
     sidebar.style.paddingTop = '0';
   }
 
   prevScroll = currentScroll;
 };
+
 
 // Lightmode function
 const labelElement = document.getElementById('switch-id');
