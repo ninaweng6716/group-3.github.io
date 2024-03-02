@@ -478,6 +478,9 @@ main {
   h1 {
     font-size: 32px;
   }
+  video {
+    margin: 1rem 0 0;
+  }
 }
 * {
   margin: 0;
@@ -899,6 +902,10 @@ td {
   margin-bottom: 1rem;
 }
 
+.transitions-h2-subtext {
+  font-size: small;
+}
+
 .transitions-graphic {
   width: 50rem;
   transition: transform 1s ease-out;
@@ -915,12 +922,6 @@ td {
 .transitions-sub-properties ul li a {
   font-size: 1.25rem;
   transition: all 0.5s linear;
-}
-
-.transitions-video {
-  display: grid;
-  margin: 1rem 0 0;
-  grid-column: span 2;
 }
 
 .transitions-cubic-bezier {

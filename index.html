@@ -163,6 +163,9 @@
                                                 
                 <section class="transitions" id="transitions">
                     <h2 class="transitions-h2">Transitions</h2>
+                    <div class="transitions-h2-subtext">
+                        <p><em>Something cool might happen if you place your cursor over titles, paragraphs, or even images...</em></p>
+                    </div>
                     <div class="transitions-grid">
                         <article class="transitions-article">                 
                             <div class="transitions-intro">
@@ -172,9 +175,9 @@
                                 </p>
                             </div>                      
                         </article>
-                        <picture>
+                        <div class="transitions-graphic-container">
                             <img class="transitions-graphic" src="images/transitions-illustration.png" alt="This is a graphic representation of what CSS transitions can do">
-                        </picture>
+                        </div>
                         <article>
                             <div class="transitions-sub-properties">
                                 <h3 id="transitions-sub-properties-h3">Transitions Sub-Properties</h3>
@@ -200,7 +203,7 @@
                             <div class="transitions-syntax-example">
                                 <h4 id="transitions-syntax-example-h4">Example</h4>
                                 <p>
-                                    See the image for how you can easily incorporate CSS transitions in your webpage. Here, we are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
+                                    See the image for how you can easily incorporate CSS transitions in your webpage. Check out the code snippet on the right. We are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
                                 </p>                        
                             </div>
                         </article>       
@@ -216,19 +219,24 @@
                             <div class="transitions-syntax-multiple">
                                 <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
                                 <p>
-                                    The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
+                                    The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown on the left reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
                                 </p>                        
                             </div>
                         </article>
                     
-                        <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
+                        <h3 id="transitions-js-h3" class="colspan-2">Using JavaScript in CSS Transitions</h3>
                         
                         <article class="colspan-2">
                             <div>
                                 <h4>Makes JavaScript Functionality Smoother</h4>
                                 <p>
-                                    You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
+                                    You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video below from MDN. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
                                 </p>
+                            </div>
+                            <div class="transitions-ball-video">
+                                <video controls width="750">
+                                    <source src="media/ball-video.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </article>
                     
@@ -239,7 +247,7 @@
                             </p>
                         </article>        
                         
-                        <div class="transitions-video">
+                        <div class="transitions-video colspan-2">
                             <video controls width="750">
                                 <source src="media/content-visibility-example-transitions.mp4" type="video/mp4">
                             </video>
