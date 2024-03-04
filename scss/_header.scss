@@ -48,10 +48,6 @@ nav {
   text-decoration: none;
 }
 
-.menuItem:hover {
-  text-decoration: underline;
-}
-
 .hamburger {
   // position: fixed;
   z-index: 100;
@@ -89,6 +85,20 @@ nav {
   text-align: center;
 }
 
+.menuItem, .menuItem:visited {
+  padding: 1rem;
+  color: white;
+}
+
+.menuItem:hover {
+  background-color: $brand-color;
+  color: $body-bg-color;
+}
+
+.menuItem:focus {
+  outline: solid 2px $body-bg-color;
+}
+
 @include media {
   
   header {
@@ -112,30 +122,22 @@ nav {
     padding-top: 0;
   }
 
-  .menu a {
-    padding: 0 1rem;
-  }
-
-  .menuItem:hover {
-    text-decoration: underline;
-  }
-
-  .menuItem {
-    text-decoration: none;
+  .menuItem, .menuItem:visited {
     display: block;
     margin: 0;
     font-size: 1rem;
     color: $body-bg-color;
-    text-decoration: none;
   }
-
+  
+  .menuItem:hover {
+    background-color: $body-bg-color;
+    color: $brand-color;
+  }
 }
 
 // Mode Toggle
 
 .toggle-container{
-  // display: inline-flex ;
-  // align-items: end;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +174,6 @@ nav {
 }
 
 .label {
-  // margin-left: 10px;
   color: #353A47;
   font-size: 16px;
 }
@@ -182,15 +183,37 @@ nav {
   background-color: $body-bg-color;
 }
 
-#toggle:checked + .label {
-  // color: $body-bg-color;
-  // margin-top: 4px;
-}
-
 .light-mode {
+  background-color: $brand-color;
+  color: $body-bg-color;
+  
+  #toggle {
+    background-color: $brand-color;
+  }
+
+  #toggle:before {
+    background-color: $body-bg-color;
+  }
+
+  .label {
+    color: $brand-color;
+    background-color: $body-bg-color;
+  }
+  
+  header, .menuItem, .menuItem:visited {
+    background-color: $body-bg-color;
+    color: $brand-color;
+  }
+
+  .menuItem:hover {
     background-color: $brand-color;
     color: $body-bg-color;
-  
+  }
+
+  .menuItem:focus {
+    outline: solid $brand-color;
+  }
+
   main {
     h2, h3, h4, h5, h6 {
       color: $heading-color-dark;
