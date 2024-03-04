@@ -25,33 +25,37 @@
 
     <a href="#main-content" class ="screen-reader-text">Skip to Main Content</a>
 
-    <header>
-        <!-- logo -->
-        <img src="images/sfc-logo.svg" width="100px" alt="Light orange cat sitting on a keyboard.">
-        <div>
-            <input type="checkbox" id="toggle" oninput="lightMode()" >
-            <label for="toggle" class="label">Switchmode</label>
+    <header id="header">
+
+        <div class="logo-wrapper">
+            <img src="images/sfc-logo.svg" width="100px" alt="Light orange cat sitting on a keyboard.">
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a class="menuItem" href="#transitions">Transitions</a></li>
-                <li><a class="menuItem" href="#transform">Transform</a></li>
-                <li><a class="menuItem" href="#animations">Animations</a></li>
-                <li><a class="menuItem" href="#keyframes">Keyframes</a></li>
-                <li><a class="menuItem" href="#about">About</a></li>
-            </ul>
-            <button class="hamburger">
-                <!-- material icons https://material.io/resources/icons/ -->
-                <i class="menuIcon material-icons">menu</i>
-                <i class="closeIcon material-icons">close</i>
-              </button>
-        </nav>
+
+        <div class="switch-nav-wrapper">
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle" oninput="lightMode()" >
+                <label id="switch-id" for="toggle" class="label">Light Mode</label>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menuItem" href="#transitions">Transitions</a></li>
+                    <li><a class="menuItem" href="#transform">Transform</a></li>
+                    <li><a class="menuItem" href="#animations">Animations</a></li>
+                    <li><a class="menuItem" href="#keyframes">Keyframes</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                </ul>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                    </button>
+            </nav>
+        </div>
 
     </header>
 
     <main id="container">
         <section class="banner">
-            <!-- Image goes here -->
             <img src="images/keyboard-banner-maximum.jpg" alt="Closeup of a laptop keyboard glowing in blue light.">
             <h1>CSS Transitions | Transforms | <span class="h1-animate">Animations</span></h1>
         </section>
@@ -60,39 +64,6 @@
             <div id="sidebar">
                 <aside>
                     <h2>Table of Contents</h2>
-                    <!-- <ul>
-                        <li><a href="#keyframes"><strong>Keyframes</strong></a></li>
-                        <li><a href="#keyframe-example-one">Keyframe Example</a></li>
-                        <li><a href="#keyframe-name">Keyframe Name</a></li>
-                        <li><a href="#keyframe-selector">Keyframe Selector</a></li>
-                        <li><a href="#keyframe-block">Keyframe Block</a></li>
-                    </ul>
-                    
-                    <ul>
-                        <li><a href="#transitions"><strong>Transitions</strong></a></li>
-                        <li><a href="#transitions-intro-h3">Why Use CSS Transitions?</a></li>
-                        <li><a href="#transitions-sub-properties-h3">Transitions Sub-Properties</a></li>
-                        <li><a href="#transitions-syntax-h3">Syntax</a></li>
-                        <li><a href="#transitions-glossary-h3">Transitions Sub-Property Glossary</a></li>
-                    </ul>
-                    
-                    <ul>
-                        <li><a href="#transform"><strong>Transforms</strong></a></li>
-                        <li><a href="#transforms-intro-h3">What is the Transform in CSS?</a></li>
-                        <li><a href="#transforms-properties-h3">Transform Properties</a></li>
-                        <li><a href="#transforms-2D">2D CSS Transformations</a></li>
-                        <li><a href="#transforms-3D">3D CSS Transformations</a></li>
-                    </ul>
-                    
-                    <ul>
-                        <li><a href="#animations"><strong>Animations</strong></a></li>
-                        <li><a href="#animation-begin">How to begin</a></li>
-                        <li><a href="#composite">Composite Operation</a></li>
-                        <li><a href="#animation-syntax">Syntax</a></li>
-                        <li><a href="#multiple-animation-values">Multiple Values</a></li>
-                        <li><a href="#stopping-animation">Stopping Animations</a></li>
-                    </ul> -->
-
                     <ul>
                         <li><a href="#keyframes"><strong>Keyframes</strong></a></li>
                         <li><a href="#keyframe-example-one">Keyframe Example</a></li>
@@ -115,12 +86,15 @@
                         <li><a href="#animation-syntax">Syntax</a></li>
                         <li><a href="#multiple-animation-values">Multiple Values</a></li>
                         <li><a href="#stopping-animation">Stopping Animations</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about"><strong>About Us</strong></a></li>
                     </ul>
                 </aside>
             </div>
             
             <div class="main-content" id="main-content">
+
+                <button id="btn-sidebar">Nav</button>
+
                 <section class="keyframes" id="keyframes">
                     <h2>Keyframes</h2>
                     <div class="keyframes-grid">
@@ -131,14 +105,12 @@
                             </p>                      
                         </article>
     
-                        <!-- Got a few errors with unclosed <keyframe-???> elements -->
-                            <!-- If these are meant to be in the text, then they don't need tags. -->
                         <article>
                             <h3 id="keyframe-example-one">Keyframe Example</h3>
-                            <p>In the example we see here that <keyframes-name>`box`</keyframes-name> the name of the animation sequence.</p>
+                            <p>In the example we see here that `box` the name of the animation sequence.</p>
                                 <ol>
-                                    <li><p>The percentages <keyframe-selector>
-                                        0%, 50%, 100% </keyframe-selector> represent “points in time” during the animation. 
+                                    <li><p>The percentages 
+                                        0%, 50%, 100% represent “points in time” during the animation. 
                                         We can also use “from” and “to” instead of 0% and 100 %
                                     </p></li>
                                     <li><p>In these points in time we can style the element. In this example we choose to 0, 0.5 and 1 opacity during those 3 stages that we set.</p></li>
@@ -151,7 +123,7 @@
                         <article>
                             <h3 id="keyframe-name">Keyframe Name</h3>
                             <p>The names are fully case-sensitive; two names are equal only if they are codepoint-by-codepoint equal. The
-                            <!-- Removed <custom-indent> element -->
+                            
                                 additionally excludes the none keyword.</p>
                                         
                             <p>For example, the following two @keyframes rules have the same name, so the first will be ignored:
@@ -175,7 +147,7 @@
                             <h3>Keyframe Selector</h3>
                             <p>The keyframe-selector for a keyframe-block consists of a comma-separated list of percentage values or the keywords from or to.</p>                                                
                             <p>The selector is used to specify the percentage along the duration of the animation that the keyframe represents. The keyframe itself is specified by the block of property values declared on the selector. The keyword from is equivalent to the value 0%. </p>                                                  
-                            <!-- <img src="" alt=""> -->
+                            
                         </article>
                                                 
                         <article>
@@ -189,6 +161,9 @@
                                                 
                 <section class="transitions" id="transitions">
                     <h2 class="transitions-h2">Transitions</h2>
+                    <div class="transitions-h2-subtext">
+                        <p><em>Something cool might happen if you place your cursor over titles, paragraphs, or even images...</em></p>
+                    </div>
                     <div class="transitions-grid">
                         <article class="transitions-article">                 
                             <div class="transitions-intro">
@@ -198,9 +173,9 @@
                                 </p>
                             </div>                      
                         </article>
-                        <picture>
+                        <div class="transitions-graphic-container">
                             <img class="transitions-graphic" src="images/transitions-illustration.png" alt="This is a graphic representation of what CSS transitions can do">
-                        </picture>
+                        </div>
                         <article>
                             <div class="transitions-sub-properties">
                                 <h3 id="transitions-sub-properties-h3">Transitions Sub-Properties</h3>
@@ -226,7 +201,7 @@
                             <div class="transitions-syntax-example">
                                 <h4 id="transitions-syntax-example-h4">Example</h4>
                                 <p>
-                                    See the image for how you can easily incorporate CSS transitions in your webpage. Here, we are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
+                                    See the image for how you can easily incorporate CSS transitions in your webpage. Check out the code snippet on the right. We are applying the ease-in timing-function on all our transition properties, which are our background-color, color, padding, and font-size. The transition animation will play out over a period of 1 second starting from the moment you hover over the <code>.nav-menu li a</code>. You can use this as a starting template for applying CSS transitions to your navigation menu. You can modify it bit by bit as you get more comfortable with the syntax.
                                 </p>                        
                             </div>
                         </article>       
@@ -242,19 +217,24 @@
                             <div class="transitions-syntax-multiple">
                                 <h4 id="transitions-syntax-multiple-h4">Multiple Values</h4>
                                 <p>
-                                    The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
+                                    The transitions property - and hence its sub-properties - can also take multiple values. For instance, if your transition-property is set to opacity, left, top, and height, you can set a specific duration for each of those properties. As with paddings and margins, identical values will be parsed. The example shown on the left reads the same as <code>transition-duration: 1s 2s 1s 2s</code>. The transition animation for the background colour and padding will take 1 second play out while the animation for the colour and font-size will take 2 seconds to play out.
                                 </p>                        
                             </div>
                         </article>
                     
-                        <h3 id="transitions-js-h3">Using JavaScript in CSS Transitions</h3>
+                        <h3 id="transitions-js-h3" class="colspan-2">Using JavaScript in CSS Transitions</h3>
                         
                         <article class="colspan-2">
                             <div>
                                 <h4>Makes JavaScript Functionality Smoother</h4>
                                 <p>
-                                    You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video on the right. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
+                                    You can use the transitions property to make your JavaScript functionality run smoother. Take a look at the video below from MDN. The red ball is moving smoothly when you click within the frame. In this case, JavaScript is used to compute interpolations so that the ball is moving to the click-location frame-by-frame instead of just popping up at the spot that you clicked.
                                 </p>
+                            </div>
+                            <div class="transitions-ball-video flex-video">
+                                <video controls width="750">
+                                    <source src="media/ball-video.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </article>
                     
@@ -265,7 +245,7 @@
                             </p>
                         </article>        
                         
-                        <div class="transitions-video">
+                        <div class="transitions-video colspan-2 flex-video">
                             <video controls width="750">
                                 <source src="media/content-visibility-example-transitions.mp4" type="video/mp4">
                             </video>
@@ -365,7 +345,7 @@
                             <div class="transitions-step-values" id="transitions-step-values">
                                 <h4>Step Values and Jump Values</h4>
                                 <p>
-                                    The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
+                                    Ste values and their associated jump values behave very similarly to <a href="#animations">CSS Animations</a>. The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
                                 </p>
                             <table class="step-values-table">
                                 <thead>

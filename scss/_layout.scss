@@ -4,11 +4,6 @@
 .main-content {
     width: 70%;
     margin: 2rem auto;
-    a {
-        color: $brand-color;
-        padding: 0;
-        text-decoration: underline;
-    }
 }
 
 .banner {
@@ -35,6 +30,15 @@
     grid-column: span 2;
 }
 
+.flex-video {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-top: 8rem;
+}
+
 @include media {
     .keyframes-grid, .transitions-grid, .transforms-grid, .animations-grid {
         @include display-grid;
@@ -53,5 +57,9 @@
 
     h1 {
         font-size: 32px;
+    }
+
+    video {
+        margin: 1rem 0 0;
     }
 }

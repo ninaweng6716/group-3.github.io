@@ -8,21 +8,36 @@
 }
 
 header {
-    background-color: $brand-color;
-    padding: 1rem;
-    align-items: center;
-    @include flex-layout;
-    // position: relative;
-    // z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: $brand-color;
+  padding: 1rem;
+  align-items: center;
+  transition: top 0.75s ease-out;
 
-    .closeIcon {
-      display: none;
-    }
+  @include flex-layout;
+
+  .closeIcon {
+    display: none;
+  }
 }
 
 header img {
     height: 6.25rem;
     width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.switch-nav-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .menuItem {
@@ -38,7 +53,7 @@ header img {
 }
 
 .hamburger {
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   top: 1rem;
   right: 1rem;
@@ -118,10 +133,19 @@ header img {
 
 // Mode Toggle
 
+.toggle-container{
+  // display: inline-flex ;
+  // align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 #toggle {
   appearance: none;
   width: 60px;
-  height: 30px;
+  height: 25px;
   border-radius: 15px;
   background-color: $body-bg-color;
   outline: none;
@@ -133,8 +157,8 @@ header img {
 #toggle:before {
   content: '';
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: $brand-color;
   top: 50%;
@@ -148,8 +172,9 @@ header img {
 }
 
 .label {
-  margin-left: 10px;
-  font-size: 18px;
+  // margin-left: 10px;
+  color: #353A47;
+  font-size: 16px;
 }
 
 // Light Mode 
@@ -158,21 +183,45 @@ header img {
 }
 
 #toggle:checked + .label {
-  color: $body-bg-color;
+  // color: $body-bg-color;
+  // margin-top: 4px;
 }
-
-
 
 .light-mode {
     background-color: $brand-color;
     color: $body-bg-color;
   
+  main {
+    h2, h3, h4, h5, h6 {
+      color: $heading-color-dark;
+    }
 
-  h2, h3, h4, h5, h6 {
-    color: $heading-color-dark;
+    table {
+      border: 1px solid $body-bg-color;
+    }
+  
+    th, td {
+      color: $text-color-dark;
+      border: 0.5px solid $body-bg-color;
+      border-collapse: collapse;
+    }
+  
+    a, a:visited {
+      color: $body-bg-color;
+    }
+
+    a:hover {
+      background-color: $body-bg-color;
+      color: $brand-color;
+    }
+
+    a:focus {
+      outline: $body-bg-color solid 2px
+    }
   }
 
-  th, td {
-    color: $text-color-dark;
+  footer {
+    color: $brand-color;
+    background-color: $body-bg-color;
   }
   }

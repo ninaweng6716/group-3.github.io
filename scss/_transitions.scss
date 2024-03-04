@@ -1,4 +1,5 @@
 @use 'vars' as *;
+@use 'mixin' as *;
 
 .transitions-h2 {
     transition: all 0.3s ease-in;
@@ -12,6 +13,10 @@
     margin-bottom: 1rem;
 }
 
+.transitions-h2-subtext {
+    font-size: small;
+}
+
 .transitions-graphic {
     width: 50rem;
     transition: transform 1s ease-out;
@@ -23,34 +28,11 @@
 
 .transitions-sub-properties ul {
     padding-left: 0;
-    margin: 1rem 0;
 }
 
 .transitions-sub-properties ul li a {
     font-size: 1.25rem;
-    text-decoration: none;
     transition: all 0.5s linear;
-}
-
-.transitions-sub-properties ul li a:hover {
-    background-color: $brand-color;
-    color: $body-bg-color;
-}
-
-.transitions-video {
-    display: grid;
-    margin: 1rem 0 0;
-    grid-column: span 2;
-}
-
-.transitions-step-values h4 {
-    position: relative; 
-    animation: step 3s steps(5, jump-none) infinite; 
-}
-
-@keyframes step {
-    0% { left: 0px; top: 0px; }
-    100% { left: 350px; top: 0px; }
 }
 
 .transitions-cubic-bezier {
@@ -60,4 +42,20 @@
 
 .transitions-cubic-bezier:hover {
     opacity: 1;
+}
+
+@media (min-width: 50em) {
+    .transitions-step-values {
+        overflow: hidden;
+    }
+
+    .transitions-step-values h4 {
+        position: relative;
+        animation: step 3s steps(5, jump-none) infinite; 
+    }
+
+    @keyframes step {
+        0% { margin-left: 0; }
+        100% { margin-left: 40vw; }
+    }
 }
