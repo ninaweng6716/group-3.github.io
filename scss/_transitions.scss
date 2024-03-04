@@ -59,3 +59,11 @@
         100% { margin-left: 40vw; }
     }
 }
+
+#sidebar {
+    transition: top 0.25s ease-out;
+}
+
+.menuItem {
+    transition: all 0.25s ease-in;
+}
