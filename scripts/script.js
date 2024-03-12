@@ -70,6 +70,8 @@ document.addEventListener('scroll', function(e) {
 
 // toggle sidebar content in mobile
 const btnSide = document.getElementById('btn-sidebar');
+const sidebar = document.getElementById('sidebar');
+const sidebarItems = document.querySelectorAll('.sidebar-items')
 
 function toggleSide() {
   if (sidebar.classList.contains("sidebar-open")) {
@@ -81,5 +83,10 @@ function toggleSide() {
     sidebar.style.display = "block";  
   }
 }
+sidebarItems.forEach( 
+  function(sidebarItems) { 
+    sidebarItems.addEventListener("click", toggleSide);
+  }
+  )
 
 btnSide.addEventListener('click', toggleSide);

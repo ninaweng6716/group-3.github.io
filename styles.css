@@ -35,6 +35,7 @@ main h3, main h4 {
 .main-content ul, .main-content ol {
   padding: 1rem 0 0 1rem;
 }
+
 .main-content ul li, .main-content ol li {
   margin: 0.5rem;
 }
@@ -42,13 +43,16 @@ main h3, main h4 {
 body a, body a:visited {
   color: #D1F0B1;
 }
+
 body a:hover {
   background-color: #D1F0B1;
   color: #353A47;
 }
+
 body a:focus {
   outline: 2px solid #D1F0B1;
 }
+
 body a:active {
   background-color: black;
   color: white;
@@ -512,6 +516,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 header .closeIcon {
   display: none;
 }
@@ -669,48 +674,61 @@ nav {
   background-color: #D1F0B1;
   color: #353A47;
 }
+
 .light-mode #toggle {
   background-color: #D1F0B1;
 }
+
 .light-mode #toggle:before {
   background-color: #353A47;
 }
+
 .light-mode .label {
   color: #D1F0B1;
   background-color: #353A47;
 }
+
 .light-mode header, .light-mode .menuItem, .light-mode .menuItem:visited {
   background-color: #353A47;
   color: #D1F0B1;
 }
+
 .light-mode .menuItem:hover {
   background-color: #D1F0B1;
   color: #353A47;
 }
+
 .light-mode .menuItem:focus {
   outline: solid #D1F0B1;
 }
+
 .light-mode main h2, .light-mode main h3, .light-mode main h4, .light-mode main h5, .light-mode main h6 {
   color: #353A47;
 }
+
 .light-mode main table {
   border: 1px solid #353A47;
 }
+
 .light-mode main th, .light-mode main td {
   color: #353A47;
   border: 0.5px solid #353A47;
   border-collapse: collapse;
 }
+
 .light-mode main a, .light-mode main a:visited {
   color: #353A47;
 }
+
 .light-mode main a:hover {
   background-color: #353A47;
   color: #D1F0B1;
 }
+
 .light-mode main a:focus {
   outline: #353A47 solid 2px;
 }
+
 .light-mode footer {
   color: #D1F0B1;
   background-color: #353A47;
@@ -750,7 +768,6 @@ td {
   right: 0;
   left: 0;
   z-index: 3;
-  height: 30px;
   background-color: #D1F0B1;
   color: #353A47;
 }
@@ -773,9 +790,11 @@ td {
   z-index: 2;
   box-shadow: 0px -6px 13px 4px #1c1f29;
 }
+
 #sidebar.sidebar-open h2 {
   display: none;
 }
+
 #sidebar.sidebar-open ul {
   display: flex;
   flex-direction: row;
@@ -786,6 +805,7 @@ td {
   gap: 0.5rem;
   padding-left: 0;
 }
+
 #sidebar.sidebar-open ul li a {
   color: #353A47;
   text-decoration: none;
@@ -1018,5 +1038,7 @@ footer {
   right: 0;
   z-index: 1;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
