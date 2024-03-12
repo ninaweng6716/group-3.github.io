@@ -1,3 +1,4 @@
+// menu button
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -24,9 +25,6 @@ menuItems.forEach(
   
 hamburger.addEventListener("click", toggleMenu);
 
-const sidebar = document.getElementById('sidebar');
-// const sidebarAndMain = document.querySelector('.sidebar-main-content-wrapper');
-
 // header disappears when user scrolls down and reappears when user scrolls up
 let prevScroll = window.scrollY;
 
@@ -43,15 +41,6 @@ window.onscroll = function() {
     sidebar.style.top = '0';
   };
 
-  // if(header.style.top == '0px' && sidebarAndMain.getBoundingClientRect().top < 136){
-  //   console.log('add style')
-  //   //sidebar.style.paddingTop = '9rem';
-  //   sidebarAndMain.style.marginTop = '220px';
-  // }else {
-  //   console.log('remove style')
-  //   sidebarAndMain.removeAttribute('style');
-  // }
-
   prevScroll = currentScroll;
 };
 
@@ -67,7 +56,7 @@ function lightMode() {
   } else {
     labelElement.textContent = 'Light Mode';
   }
-}
+};
 
 // Animation Begins when User scrolls to content
 document.addEventListener('scroll', function(e) {
@@ -77,9 +66,9 @@ document.addEventListener('scroll', function(e) {
   if (isVisible) {
     document.getElementById('box-animation').classList.add('animate');
   }
-})
+});
 
-// toggle sidebar content
+// toggle sidebar content in mobile
 const btnSide = document.getElementById('btn-sidebar');
 
 function toggleSide() {

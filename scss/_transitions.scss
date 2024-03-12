@@ -67,3 +67,20 @@
 .menuItem {
     transition: all 0.25s ease-in;
 }
+
+.big-text {
+    transition: font-size 0.3s ease-in-out;
+}
+
+.big-text:hover {
+    font-size: 28px;
+}
+
+.skew-x {
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skew-x:hover {
+    transform: translate(0px, 0px) skew(-40deg, 0deg);
+    font-size: 20px;
+}
