@@ -321,18 +321,18 @@
                                         <td>Very similar to ease, with a gradual acceleration and deceleration.</td>
                                     </tr>
                                     <tr>
-                                    <td><strong>linear</strong></td>
-                                    <td>Transition speed is constant throughout.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>step-start</strong></td>
-                                    <td>Element jumps to its final step right away.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>step-end</strong></td>
-                                    <td>The element stays in its initial step until it jumps to the final step rather abruptly.</td>
-                                </tr>
-                                  <tr>
+                                        <td><strong>linear</strong></td>
+                                        <td>Transition speed is constant throughout.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>step-start</strong></td>
+                                        <td>Element jumps to its final step right away.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>step-end</strong></td>
+                                        <td>The element stays in its initial step until it jumps to the final step rather abruptly.</td>
+                                    </tr>
+                                    <tr>
                                       <td><strong>cubic-bezier</strong></td>
                                       <td>The transition behaves according to the cubic-bezier curve function, which you can use to specify four points of contact where the transition accelerates and decelerates.The points of contact are expressed as coordinates on a graph.</td>
                                     </tr>
@@ -347,34 +347,36 @@
                                 <p>
                                     Ste values and their associated jump values behave very similarly to <a href="#animations">CSS Animations</a>. The step value creates that "choppy" transition animation, which can be useful for animating an analog clock, footprints, and other similar things. The syntax is <code>transition-timing-function: steps &#40;4&#41;</code>. This means that the transition will occur over 4 steps. With the step function, you can add a jump value if you want more precise control over how you want your steps transition animation to behave. Let's say you are applying the transition property on a progress bar that you have created and you want the progress bar to quickly fill up on the final step of its animation, you can write <code>transition-timing-function: steps(10, jump-end)</code>. This code will allow the transition to end abruptly when the progress bar is filled all the way. You can leave the jump value blank and your regular steps syntax will still work. The jump value will simply be the default value of jump-end.
                                 </p>
-                            <table class="step-values-table">
-                                <thead>
-                                    <tr>
-                                        <th>Jump Value</th>
-                                        <th>Definition</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Jump-start</strong></td>
-                                        <td>The first "jump" happens when the animation begins. In other words, the progress bar fills from left to right ("abrupt" start).</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Jump-end</strong></td>
-                                        <td>Default jump-value. The last jump happens when the animation ends. Progress bar analogy: transition ends suddenly on the right when the bar is filled.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Jump-none</strong></td>
-                                        <td>No jump on either end.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Jump-both</strong></td>
-                                        <td>It's like if the progress bar paused for a bit at the start and end.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+
+                                <table class="step-values-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Jump Value</th>
+                                            <th>Definition</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Jump-start</strong></td>
+                                            <td>The first "jump" happens when the animation begins. In other words, the progress bar fills from left to right ("abrupt" start).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Jump-end</strong></td>
+                                            <td>Default jump-value. The last jump happens when the animation ends. Progress bar analogy: transition ends suddenly on the right when the bar is filled.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Jump-none</strong></td>
+                                            <td>No jump on either end.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Jump-both</strong></td>
+                                            <td>It's like if the progress bar paused for a bit at the start and end.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </article>
+
                         <article class="colspan-2">
                             <div id="step-end-start" class="step-end-start">
                                 <h4>Step-End and Step-Start</h4>
@@ -392,7 +394,6 @@
                                 </p>
                             </div>
                         </article>
-                        <!-- <img src="" alt=""> -->
                 </div>
                 </section>
             
