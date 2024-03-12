@@ -83,10 +83,5 @@ function toggleSide() {
     sidebar.style.display = "block";  
   }
 }
-sidebarItems.forEach( 
-  function(sidebarItems) { 
-    sidebarItems.addEventListener("click", toggleSide);
-  }
-  )
 
 btnSide.addEventListener('click', toggleSide);
